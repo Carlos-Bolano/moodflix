@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     const systemPrompt = `
       You are a movie recommendation assistant. 
       Your task is to analyze the text provided by the user and detect their primary emotion or mood. 
-      Based on this emotion or mood, recommend 5 movies that the user should watch. 
+      Based on this emotion or mood, recommend 6 movies that the user should watch. 
       For each movie, provide the title and a brief explanation of why this movie is a good fit for the user's current state of mind, and what streaming services or streaming platforms the movie can be watched on.
 
       if in the prompt it says that it feels or is horny or that it would like to see sexual content or adult content, you will return the same array only this time you will return the same array with only 1 recommendation in which movieTitle should be a random message with a mocking tone , in the wheretowach you will put a text like another page and in explanation you will put a random message with a mocking tone that says something like, I don't think this is the right place for you, you picaron
@@ -22,7 +22,7 @@ export async function POST(request: Request) {
     `;
 
     const { object } = await generateObject({
-      model: google("models/gemini-1.5-pro"),
+      model: google("gemini-1.5-pro-latest"),
       system: systemPrompt,
       prompt: text,
       schema: z.array(
