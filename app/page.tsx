@@ -1,41 +1,24 @@
 "use client";
-import MovieCard from "@/components/MovieCard";
+import EmojiRain from "@/components/EmojiRain";
+import ErrorMessage from "@/components/ErrorMessage ";
+import Loader from "@/components/Loader";
+import RecommendationsSection from "@/components/RecommendationsSection";
+import SearchForm from "@/components/SearchForm";
+import useRecommendations from "@/hooks/useRecommendations";
 import Link from "next/link";
-import { useState } from "react";
-export interface Recommendation {
-  movieTitle: string;
-  explanation: string;
-  whereToWatch: string[];
-}
 
 export default function Home() {
-  const [text, setText] = useState("");
-  const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setLoading(true);
-    try {
-      const response = await fetch("/api/analyze", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ text }),
-      });
-      const data = await response.json();
-      setRecommendations(data.recommendations);
-      console.log(data);
-    } catch (error) {
-      console.error("Error fetching recommendations", error);
-    } finally {
-      setLoading(false);
-      setText("");
-    }
-  };
+  const {
+    prompt,
+    setPrompt,
+    recommendations,
+    isGot,
+    loading,
+    error,
+    handleSubmit,
+  } = useRecommendations();
   return (
-    <main className="flex min-h-screen flex-col items-center py-10 container mx-auto">
+    <section className="flex flex-col items-center py-10 relative ">
       <Link
         href="/"
         className="flex items-center justify-center gap-1 text-red-400"
@@ -58,46 +41,27 @@ export default function Home() {
         </svg>
         <h1 className="text-4xl font-medium font-sans">moodflix</h1>
       </Link>
-      <h1 className="font-poppins font-medium mt-5">
+      <p className="font-medium mt-5 text-center text-xl text-gray-600 drop-shadow-sm	">
         Movie Recommender Based on emotions, feelings or mood 🧠
-      </h1>
-      <div className="mt-20">
-        <form
-          className="flex flex-col gap-4 justify-center items-center"
-          onSubmit={handleSubmit}
-        >
-          <textarea
-            className="focus:outline-red-400 border-2 p-4 w-full rounded-md"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            placeholder="How are you feeling?"
-            rows={2}
-            cols={60}
-            required
-          />
-          <button
-            disabled={loading}
-            className="bg-red-400 px-4 py-2 rounded-md text-white"
-            type="submit"
-          >
-            {loading ? "Getting recommendations" : "Get recomendations 🍿"}
-          </button>
-        </form>
-      </div>
-      {loading ? (
-        <p className="mt-10">Loading...</p>
+      </p>
+      <EmojiRain />
+      <SearchForm
+        prompt={prompt}
+        setPrompt={setPrompt}
+        loading={loading}
+        handleSubmit={handleSubmit}
+      />
+
+      {error ? (
+        <ErrorMessage error={error} />
+      ) : loading ? (
+        <Loader />
       ) : (
-        <div className="mt-5 flex flex-col gap-4">
-          {recommendations.map((recommendation) => (
-            <MovieCard
-              key={recommendation.movieTitle}
-              movieTitle={recommendation.movieTitle}
-              explanation={recommendation.explanation}
-              whereToWatch={recommendation.whereToWatch}
-            />
-          ))}
-        </div>
+        <RecommendationsSection
+          recommendations={recommendations}
+          isGot={isGot}
+        />
       )}
-    </main>
+    </section>
   );
 }
