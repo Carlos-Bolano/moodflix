@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function SearchForm({
   prompt,
   setPrompt,
@@ -26,10 +28,19 @@ export default function SearchForm({
         />
         <button
           disabled={loading}
-          className="bg-red-400 px-4 py-2 rounded-md text-white disabled:bg-red-300 transition-colors duration-300"
           type="submit"
+          className="text-white bg-red-400 hover:bg-red-500font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1"
         >
-          {loading ? "Getting recommendations" : "Get recommendations 🍿"}
+          <span className="block">
+            {loading ? "Getting recommendations" : "Get recommendations"}
+          </span>
+
+          <Image
+            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Clapper%20Board.png"
+            alt="loader"
+            width={20}
+            height={20}
+          />
         </button>
       </form>
     </div>
