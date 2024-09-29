@@ -28,17 +28,17 @@ body {
   position: absolute;
   bottom: -30px;
   font-size: 2rem;
-  animation: moveUpAndRotate 9s linear forwards; 
+  animation: moveUp 9s linear forwards; 
   z-index: -1; 
 }
  
-@keyframes moveUpAndRotate {
+@keyframes moveUp {
   0% {
-    transform: translateY(0) rotate(0deg); 
+    transform: translateY(0);
     opacity: .8;
   }
   100% {
-    transform: translateY(-110vh) rotate(360deg); 
+    transform: translateY(-110vh);
     opacity: 0;
     filter: blur(4px);
   }
