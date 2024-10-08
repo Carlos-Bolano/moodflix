@@ -16,7 +16,7 @@
 - Sleek and intuitive user interface for an enhanced experience 🎨
 
 ### 🛠️ Built With these technologies
-[![React][React Badge]][React URL] [![Next.js][Next.js Badge]][Next.js URL] [![TailwindCSS][TailwindCSS Badge]][TailwindCSS URL] [![TypeScript][TypeScript Badge]][TypeScript URL] [![Shadcn/UI][Shadcn/UI Badge]][Shadcn/UI URL] [![Lucide][Lucide Badge]][Lucide URL] [![Figma][Figma Badge]][Figma URL] [![Zod][Zod Badge]][Zod URL] [![MongoDB][MongoDB Badge]][MongoDB URL] [![Eslint][Eslint Badge]][Eslint URL] [![Prettier][Prettier Badge]][Prettier URL] [![Gemini][Gemini Badge]][Gemini URL]
+[![React][React Badge]][React URL] [![Next.js][Next.js Badge]][Next.js URL] [![TailwindCSS][TailwindCSS Badge]][TailwindCSS URL] [![TypeScript][TypeScript Badge]][TypeScript URL] [ [![Zod][Zod Badge]][Zod URL] [![Eslint][Eslint Badge]][Eslint URL] [![Prettier][Prettier Badge]][Prettier URL] [![Gemini][Gemini Badge]][Gemini URL]
 
 
 ## 🤝 Contributing
@@ -62,16 +62,10 @@ Looking forward to connecting with you!
 [Eslint URL]: https://eslint.org/
 [Prettier Badge]: https://img.shields.io/badge/Prettier-F7B93E.svg?style=for-the-badge&logo=Prettier&logoColor=black
 [Prettier URL]: https://prettier.io/
-[Figma Badge]: https://img.shields.io/badge/Figma-F24E1E.svg?style=for-the-badge&logo=Figma&logoColor=white
-[Figma URL]: https://www.figma.com/
 [Shadcn/UI Badge]: https://img.shields.io/badge/shadcn/ui-000000.svg?style=for-the-badge&logo=shadcn/ui&logoColor=white
 [Shadcn/UI URL]: https://ui.shadcn.com/
-[Lucide Badge]: https://img.shields.io/badge/Lucide-f67373.svg?style=for-the-badge&logo=lucide&logoColor=white
-[Lucide URL]: https://lucide.dev/
 [Zod Badge]: https://img.shields.io/badge/Zod-3E67B1.svg?style=for-the-badge&logo=Zod&logoColor=white
 [Zod URL]: https://zod.dev/
-[MongoDB Badge]: https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=MongoDB&logoColor=white
-[MongoDB URL]: https://www.mongodb.com/
 [Gemini Badge]: https://img.shields.io/badge/Gemini-FF5722.svg?style=for-the-badge&logo=google&logoColor=white
 [Gemini URL]: https://gemini.google.com/
 
