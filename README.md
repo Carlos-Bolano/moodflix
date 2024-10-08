@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 🎥 Moodflix 🎥
 
-First, run the development server:
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📖 About The Project
+
+**Moodflix** es una app impulsada por inteligencia artificial que recomienda películas basadas en el estado emocional del usuario. Analiza entradas de texto y sugiere películas que coinciden con el estado de ánimo, proporcionando explicaciones personalizadas.
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+### 🌟 Características:
+- Análisis de emociones a través del texto
+- Recomendaciones personalizadas de películas 🎬
+- Utiliza IA con el SDK de Vercel y la API de Google
+
+### 🛠️ Built With
+* [Next.js](https://nextjs.org/)
+* [Vercel AI SDK](https://vercel.com/docs)
+* [Google API](https://developers.google.com/)
+
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+1. Clonar el repositorio:
+```sh
+git clone https://github.com/tu_usuario/moodflix.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instalar dependencias:
+```sh
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Configurar las variables de entorno:
+```env
+API_KEY=tu_api_key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🤝 Contributing
 
-## Learn More
+Las contribuciones son bienvenidas, sigue estos pasos:
+1. Hacer un fork del proyecto
+2. Crear una nueva rama (`git checkout -b feature/AmazingFeature`)
+3. Realizar los commits necesarios (`git commit -m 'Add AmazingFeature'`)
+4. Abrir un Pull Request
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📧 Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Carlos - [@tu_usuario](https://twitter.com/tu_usuario) - tu_email@example.com
 
-## Deploy on Vercel
+Project Link: [https://github.com/tu_usuario/moodflix](https://github.com/tu_usuario/moodflix)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
