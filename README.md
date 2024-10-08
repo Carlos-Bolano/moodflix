@@ -18,25 +18,6 @@
 ### 🛠️ Built With these technologies
 [![React][React Badge]][React URL] [![Next.js][Next.js Badge]][Next.js URL] [![TailwindCSS][TailwindCSS Badge]][TailwindCSS URL] [![TypeScript][TypeScript Badge]][TypeScript URL] [![Shadcn/UI][Shadcn/UI Badge]][Shadcn/UI URL] [![Lucide][Lucide Badge]][Lucide URL] [![Figma][Figma Badge]][Figma URL] [![Zod][Zod Badge]][Zod URL] [![MongoDB][MongoDB Badge]][MongoDB URL] [![Eslint][Eslint Badge]][Eslint URL] [![Prettier][Prettier Badge]][Prettier URL]
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-1. Clonar el repositorio:
-```sh
-git clone https://github.com/tu_usuario/moodflix.git
-```
-
-2. Instalar dependencias:
-```sh
-npm install
-```
-
-3. Configurar las variables de entorno:
-```env
-API_KEY=tu_api_key
-```
-
 ## 🤝 Contributing
 
 Las contribuciones son bienvenidas, sigue estos pasos:
