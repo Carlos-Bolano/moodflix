@@ -33,11 +33,8 @@ Contributions are welcome, please follow these steps:
 
 I’d love to hear from you! Whether you have questions, feedback, or want to connect, feel free to reach out through any of the following platforms:
 
-- **X**: Stay updated and join the conversation [![X][X Badge]][X URL]
-- **LinkedIn**: Let's connect professionally and network [![LinkedIn][LinkedIn Badge]][LinkedIn URL]
-- **Email**: For inquiries or collaborations, drop me a line at [![GMail][GMail Badge]][GMail URL]
-- **Portfolio**: Explore my work and projects [![Portfolio][Portfolio Badge]][Portfolio URL]
-
+ [![X][X Badge]][X URL] [![LinkedIn][LinkedIn Badge]][LinkedIn URL] [![GMail][GMail Badge]][GMail URL] [![Portfolio][Portfolio Badge]][Portfolio URL]
+ 
 Looking forward to connecting with you!
 
 
