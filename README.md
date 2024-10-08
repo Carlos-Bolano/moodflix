@@ -16,7 +16,7 @@
 - Sleek and intuitive user interface for an enhanced experience 🎨
 
 ### 🛠️ Built With these technologies
-[![React][React Badge]][React URL] [![Next.js][Next.js Badge]][Next.js URL] [![TailwindCSS][TailwindCSS Badge]][TailwindCSS URL] [![TypeScript][TypeScript Badge]][TypeScript URL] [ [![Zod][Zod Badge]][Zod URL] [![Eslint][Eslint Badge]][Eslint URL] [![Prettier][Prettier Badge]][Prettier URL] [![Gemini][Gemini Badge]][Gemini URL]
+[![React][React Badge]][React URL] [![Next.js][Next.js Badge]][Next.js URL] [![TailwindCSS][TailwindCSS Badge]][TailwindCSS URL] [![TypeScript][TypeScript Badge]][TypeScript URL] [![Zod][Zod Badge]][Zod URL] [![Eslint][Eslint Badge]][Eslint URL] [![Prettier][Prettier Badge]][Prettier URL] [![Gemini][Gemini Badge]][Gemini URL]
 
 
 ## 🤝 Contributing
