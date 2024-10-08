@@ -5,10 +5,7 @@
 
 **Moodflix** is ​​an AI-powered app that recommends movies based on the user's emotional state. It analyzes text inputs and suggests movies that match the mood, providing personalized explanations and the platforms where they can watch that movie.
 
-<a href="https://moodflix-by-calisto.vercel.app">
-    <img src=" https://github.com/Carlos-Bolano/moodflix/blob/main/public/moodflix-screenshot.png" alt="Moodflix - A Movie Recommendation App" style="border-radius: 10px;"/>
-</a>
-
+[![Product Name Screen Shot][product-screenshot]][Portfolio URL]
 
 ### 🌟 Features:
 - Emotional analysis through text input 🧠
