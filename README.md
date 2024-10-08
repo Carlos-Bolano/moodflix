@@ -16,7 +16,7 @@
 - Sleek and intuitive user interface for an enhanced experience 🎨
 
 ### 🛠️ Built With these technologies
-[React][React Badge]][React URL] [![Next.js][Next.js Badge]][Next.js URL] [![TailwindCSS][TailwindCSS Badge]][TailwindCSS URL] [![TypeScript][TypeScript Badge]][TypeScript URL] [![Shadcn/UI][Shadcn/UI Badge]][Shadcn/UI URL] [![Lucide][Lucide Badge]][Lucide URL] [![Figma][Figma Badge]][Figma URL] [![Zod][Zod Badge]][Zod URL] [![MongoDB][MongoDB Badge]][MongoDB URL] [![Eslint][Eslint Badge]][Eslint URL] [![Prettier][Prettier Badge]][Prettier URL]
+[![React][React Badge]][React URL] [![Next.js][Next.js Badge]][Next.js URL] [![TailwindCSS][TailwindCSS Badge]][TailwindCSS URL] [![TypeScript][TypeScript Badge]][TypeScript URL] [![Shadcn/UI][Shadcn/UI Badge]][Shadcn/UI URL] [![Lucide][Lucide Badge]][Lucide URL] [![Figma][Figma Badge]][Figma URL] [![Zod][Zod Badge]][Zod URL] [![MongoDB][MongoDB Badge]][MongoDB URL] [![Eslint][Eslint Badge]][Eslint URL] [![Prettier][Prettier Badge]][Prettier URL]
 
 ## 🚀 Getting Started
 
@@ -62,6 +62,8 @@ Las contribuciones son bienvenidas, sigue estos pasos:
 [GMail URL]: mailto:carlostutos828@gmail.com
 [Portfolio badge]:https://img.shields.io/badge/Portfolio-000000.svg?style=for-the-badge&logo=portfolio&logoColor=white
 [Portfolio URL]: https://carlos-bolano.vercel.app
+[product-screenshot]: https://github.com/Carlos-Bolano/moodflix/blob/main/public/moodflix-screenshot.png
+
 
 [TypeScript Badge]: https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white
 [TypeScript URL]: https://www.typescriptlang.org/
