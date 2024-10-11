@@ -11,11 +11,11 @@ export default function Home() {
   const {
     prompt,
     setPrompt,
-    recommendations,
     isGot,
     loading,
     error,
     handleSubmit,
+    movies,
   } = useRecommendations();
   return (
     <section className="flex flex-col items-center py-10 relative ">
@@ -58,7 +58,7 @@ export default function Home() {
         <Loader />
       ) : (
         <RecommendationsSection
-          recommendations={recommendations}
+          movies={movies}
           isGot={isGot}
         />
       )}

@@ -1,21 +1,19 @@
+import { Movie } from "@/components/MovieCard";
+import { getMovieDetails } from "@/utils/GetMovieDetails";
 import { useState, useCallback } from "react";
 
-export interface Recommendation {
-  movieTitle: string;
-  explanation: string;
-  whereToWatch: string[];
-}
 function useRecommendations() {
   const [prompt, setPrompt] = useState<string>("");
-  const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
+  const [movies, setMovies] = useState<Movie[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
-  const isGot = recommendations ? recommendations.length >= 1 : false;
+  const isGot = movies ? movies.length >= 1 : false;
 
   const fetchRecommendations = useCallback(async () => {
     setLoading(true);
     setError(null);
+    setMovies([]);
     try {
       const response = await fetch("/api/analyze", {
         method: "POST",
@@ -30,7 +28,25 @@ function useRecommendations() {
       }
 
       const data = await response.json();
-      setRecommendations(data.recommendations);
+
+      data.recommendations.forEach(async (recommendation: any) => {
+        const movieDetails = await getMovieDetails(recommendation.movieTitle);
+        setMovies((prevMovies) => [
+          ...prevMovies,
+          {
+            id: movieDetails.movieId,
+            title: movieDetails.title,
+            explanation: recommendation.explanation,
+            trailer: recommendation.trailer,
+            platforms: recommendation.platforms,
+            year: movieDetails.release_date,
+            poster: movieDetails.posterPath,
+            backdropPoster: movieDetails.backdroPath,
+            rating: movieDetails.vote_average,
+            genres: movieDetails.genres,
+          },
+        ]);
+      });
     } catch (err: any) {
       setError(err.message || "Unknown error occurred");
     } finally {
@@ -50,11 +66,11 @@ function useRecommendations() {
   return {
     prompt,
     setPrompt,
-    recommendations,
     isGot,
     loading,
     error,
     handleSubmit,
+    movies,
   };
 }
 
