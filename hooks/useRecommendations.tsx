@@ -1,6 +1,6 @@
 import { Movie } from "@/components/MovieCard";
 import { getMovieDetails } from "@/utils/GetMovieDetails";
-import { useState, useCallback } from "react";
+import { useState } from "react";
 
 function useRecommendations() {
   const [prompt, setPrompt] = useState<string>("");
@@ -10,10 +10,11 @@ function useRecommendations() {
 
   const isGot = movies ? movies.length >= 1 : false;
 
-  const fetchRecommendations = useCallback(async () => {
+  const fetchRecommendations = async () => {
     setLoading(true);
     setError(null);
     setMovies([]);
+
     try {
       const response = await fetch("/api/analyze", {
         method: "POST",
@@ -29,39 +30,55 @@ function useRecommendations() {
 
       const data = await response.json();
 
-      data.recommendations.forEach(async (recommendation: any) => {
-        const movieDetails = await getMovieDetails(recommendation.movieTitle);
+      if (data.recommendations.length === 1) {
+        const recommendation = data.recommendations[0];
         setMovies((prevMovies) => [
           ...prevMovies,
           {
-            id: movieDetails.movieId,
-            title: movieDetails.title,
+            id: 23,
+            title: recommendation.movieTitle,
             explanation: recommendation.explanation,
             trailer: recommendation.trailer,
             platforms: recommendation.platforms,
-            year: movieDetails.release_date,
-            poster: movieDetails.posterPath,
-            backdropPoster: movieDetails.backdroPath,
-            rating: movieDetails.vote_average,
-            genres: movieDetails.genres,
+            year: "",
+            poster: "",
+            backdropPoster: "",
+            rating: 0,
+            genres: [""],
           },
         ]);
-      });
+      } else {
+        data.recommendations.forEach(async (recommendation: any) => {
+          const movieDetails = await getMovieDetails(recommendation.movieTitle);
+          setMovies((prevMovies) => [
+            ...prevMovies,
+            {
+              id: movieDetails.movieId,
+              title: movieDetails.title,
+              explanation: recommendation.explanation,
+              trailer: recommendation.trailer,
+              platforms: recommendation.platforms,
+              year: movieDetails.release_date,
+              poster: movieDetails.posterPath,
+              backdropPoster: movieDetails.backdroPath,
+              rating: movieDetails.vote_average,
+              genres: movieDetails.genres,
+            },
+          ]);
+        });
+      }
     } catch (err: any) {
       setError(err.message || "Unknown error occurred");
     } finally {
       setLoading(false);
     }
-  }, [prompt]);
+  };
 
-  const handleSubmit = useCallback(
-    async (event: React.FormEvent<HTMLFormElement>) => {
-      event.preventDefault();
-      await fetchRecommendations();
-      setPrompt("");
-    },
-    [fetchRecommendations]
-  );
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    await fetchRecommendations();
+    setPrompt("");
+  };
 
   return {
     prompt,
