@@ -50,21 +50,22 @@ function useRecommendations() {
       } else {
         data.recommendations.forEach(async (recommendation: any) => {
           const movieDetails = await getMovieDetails(recommendation.movieTitle);
-          setMovies((prevMovies) => [
-            ...prevMovies,
-            {
-              id: movieDetails.movieId,
-              title: movieDetails.title,
-              explanation: recommendation.explanation,
-              trailer: recommendation.trailer,
-              platforms: recommendation.platforms,
-              year: movieDetails.release_date,
-              poster: movieDetails.posterPath,
-              backdropPoster: movieDetails.backdroPath,
-              rating: movieDetails.vote_average,
-              genres: movieDetails.genres,
-            },
-          ]);
+          movieDetails &&
+            setMovies((prevMovies) => [
+              ...prevMovies,
+              {
+                id: movieDetails.movieId,
+                title: movieDetails.title,
+                explanation: recommendation.explanation,
+                trailer: recommendation.trailer,
+                platforms: recommendation.platforms,
+                year: movieDetails.release_date,
+                poster: movieDetails.posterPath,
+                backdropPoster: movieDetails.backdroPath,
+                rating: movieDetails.vote_average,
+                genres: movieDetails.genres,
+              },
+            ]);
         });
       }
     } catch (err: any) {
