@@ -8,21 +8,10 @@ import useRecommendations from "@/hooks/useRecommendations";
 import Link from "next/link";
 
 export default function Home() {
-  const {
-    prompt,
-    setPrompt,
-    isGot,
-    loading,
-    error,
-    handleSubmit,
-    movies,
-  } = useRecommendations();
+  const { prompt, setPrompt, isGot, loading, error, handleSubmit, movies } = useRecommendations();
   return (
     <section className="flex flex-col items-center py-10 relative ">
-      <Link
-        href="/"
-        className="flex items-center justify-center gap-1 text-red-400"
-      >
+      <Link href="/" className="flex items-center justify-center gap-1 text-red-400">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50"
@@ -45,22 +34,13 @@ export default function Home() {
         Movie Recommender Based on emotions, feelings or mood 🧠
       </p>
       <EmojiRain />
-      <SearchForm
-        prompt={prompt}
-        setPrompt={setPrompt}
-        loading={loading}
-        handleSubmit={handleSubmit}
-      />
-
+      <SearchForm prompt={prompt} setPrompt={setPrompt} loading={loading} handleSubmit={handleSubmit} />
       {error ? (
         <ErrorMessage error={error} />
       ) : loading ? (
         <Loader />
       ) : (
-        <RecommendationsSection
-          movies={movies}
-          isGot={isGot}
-        />
+        <RecommendationsSection movies={movies} isGot={isGot} />
       )}
     </section>
   );

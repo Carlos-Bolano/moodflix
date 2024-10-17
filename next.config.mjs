@@ -8,10 +8,10 @@ const nextConfig = {
         pathname: "/**",
       },
       {
-        protocol: 'https',
-        hostname: 'image.tmdb.org',
-        pathname: '/**',
-      }
+        protocol: "https",
+        hostname: "image.tmdb.org",
+        pathname: "/**",
+      },
     ],
   },
 };
