@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -26,10 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <main className="container mx-auto min-h-screen justify-between flex flex-col px-2">
-          {children}
+        <div className="relative min-h-screen justify-between flex flex-col ">
+          <Navbar />
+          <main className="pt-8 md:pt-20 container mx-auto px-2">{children}</main>
           <Footer />
-        </main>
+        </div>
       </body>
     </html>
   );
