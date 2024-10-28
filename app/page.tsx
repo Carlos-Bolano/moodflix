@@ -11,12 +11,12 @@ export default function Home() {
   const { prompt, setPrompt, isGot, loading, error, handleSubmit, movies } = useRecommendations();
   return (
     <section className="flex flex-col items-center py-10 relative z-10 ">
-      <p className="font-semibold mt-5 text-center text-3xl sm:text-4xl md:text-5xl text-gray-600 drop-shadow-sm max-w-[750px]">
+      <h1 className="font-semibold mt-5 text-center text-3xl sm:text-4xl md:text-5xl text-gray-600 drop-shadow-sm max-w-[750px]">
         Movie Recommender Based on emotions, feelings or mood
-      </p>
+      </h1>
       <p className="mt-5 text-center text-lg text-gray-600 drop-shadow-sm max-w-[750px]">
         don&apos;t want to write how you feel?, then{" "}
-        <Link className="text-red-400" href="/">
+        <Link className="text-red-400" href="/choose">
           choose your mood.
         </Link>
       </p>
