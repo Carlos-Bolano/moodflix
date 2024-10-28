@@ -23,15 +23,17 @@ const MovieCard = ({ title, explanation, platforms, poster, rating, year, genres
 
   return (
     <article className="md:p-4 rounded-3xl bg-white/70 backdrop-blur-sm shadow-xl flex flex-col md:flex-row gap-3 md:gap-1 border-2 border-white">
-      {poster && (
-        <Image
-          className="md:rounded-3xl rounded-t-3xl w-full md:w-full h-auto"
-          src={poster}
-          alt={title}
-          width={200}
-          height={100}
-        />
-      )}
+      {poster
+        ? poster.includes("http") && (
+            <Image
+              className="md:rounded-3xl rounded-t-3xl w-full md:w-1/2 h-auto"
+              src={poster}
+              alt={title}
+              width={200}
+              height={100}
+            />
+          )
+        : null}
       <div className="flex flex-col md:mt-4 px-4 pb-4">
         <Link
           href={googleSearchUrl}
@@ -68,17 +70,22 @@ const MovieCard = ({ title, explanation, platforms, poster, rating, year, genres
 
         <p className="text-slate-600 mt-2 text-[14.6px]">{explanation}</p>
 
-        <div className="flex flex-wrap gap-2 items-center mt-2  ">
-          {platforms.map((platform) => (
-            <Image
-              className="drop-shadow-lg"
-              key={platform.name}
-              src={getPlatformLogo(platform.name)}
-              alt={getPlatformLogo(platform.name) ? platform.name : " "}
-              width={70}
-              height={70}
-            />
-          ))}
+        <div className="flex flex-wrap gap-2 items-center mt-2">
+          {platforms && platforms.length > 0
+            ? platforms.map((platform) => {
+                const logoSrc = getPlatformLogo(platform.name);
+                return logoSrc ? (
+                  <Image
+                    className="drop-shadow-lg"
+                    key={platform.name}
+                    src={logoSrc}
+                    alt={platform.name}
+                    width={70}
+                    height={70}
+                  />
+                ) : null;
+              })
+            : null}
         </div>
       </div>
     </article>
