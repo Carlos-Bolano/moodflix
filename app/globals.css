@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   color: rgb(var(--foreground-rgb));
-  background: #faf7de
+  background: #faf7de;
 }
 
 @layer utilities {
@@ -19,7 +18,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  pointer-events: none; 
+  pointer-events: none;
   overflow: hidden;
   z-index: -1;
 }
@@ -28,14 +27,14 @@ body {
   position: absolute;
   bottom: -30px;
   font-size: 2rem;
-  animation: moveUp 9s linear forwards; 
-  z-index: -1; 
+  animation: moveUp 9s linear forwards;
+  z-index: -1;
 }
- 
+
 @keyframes moveUp {
   0% {
     transform: translateY(0);
-    opacity: .8;
+    opacity: 0.8;
   }
   100% {
     transform: translateY(-110vh);
