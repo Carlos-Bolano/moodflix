@@ -30,7 +30,7 @@ export default function RecommendationsSection({ movies, isGot }: { movies: Movi
     );
   }
 
-  if (movies.length === 1) {
+  if (movies.length === 1 && movies[0].id === 23) {
     const singleMovie = movies[0];
     return <p>{singleMovie.title}</p>;
   }
