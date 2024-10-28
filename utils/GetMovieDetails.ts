@@ -2,7 +2,7 @@ import { Genre, GENRES } from "@/constans";
 
 export const getMovieDetails = async (movieTitle: string) => {
   try {
-    const url = `https://api.themoviedb.org/3/search/movie?query=${movieTitle}&include_adult=false&language=es-Es&page=1`;
+    const url = `https://api.themoviedb.org/3/search/movie?query=${movieTitle}&include_adult=false&language=en-En&page=1`;
 
     const options = {
       method: "GET",
@@ -14,7 +14,18 @@ export const getMovieDetails = async (movieTitle: string) => {
 
     const res = await fetch(url, options);
     const data = await res.json();
-    const details = await data.results[0];
+
+    if (!data.results || data.results.length === 0) {
+      console.error("No se encontraron películas para el título proporcionado.");
+      return null;
+    }
+
+    const details = data.results[0];
+
+    if (!details.genre_ids) {
+      console.error("genre_ids no está definido en los detalles de la película.");
+      return null;
+    }
 
     const genreNames = details.genre_ids.reduce((acc: string[], id: number) => {
       const genre = GENRES.find((genre) => genre.id === id);
@@ -26,7 +37,6 @@ export const getMovieDetails = async (movieTitle: string) => {
 
     const movie = {
       movieId: details.id,
-      backdroPath: `https://image.tmdb.org/t/p/w500/${details.backdrop_path}`,
       posterPath: `https://image.tmdb.org/t/p/w500/${details.poster_path}`,
       title: details.title,
       vote_average: details.vote_average,
@@ -35,7 +45,8 @@ export const getMovieDetails = async (movieTitle: string) => {
     };
     return movie;
   } catch (error) {
-    console.error(error);
+    console.error("Error al obtener los detalles de la película:", error);
+    return null; // Manejo del error según tu lógica
   }
 };
 // TODO: SET language=es-Es IN THE QUERY TO MAKE THE REQUEST
