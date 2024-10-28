@@ -10,18 +10,19 @@ function useRecommendations() {
 
   const isGot = movies ? movies.length >= 1 : false;
 
-  const fetchRecommendations = async () => {
+  const fetchRecommendations = async (text?: string) => {
     setLoading(true);
     setError(null);
     setMovies([]);
 
     try {
+      const promptText = text || prompt;
       const response = await fetch("/api/analyze", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ text: prompt }),
+        body: JSON.stringify({ text: promptText }),
       });
 
       if (!response.ok) {
@@ -61,7 +62,6 @@ function useRecommendations() {
                 platforms: recommendation.platforms,
                 year: movieDetails.release_date,
                 poster: movieDetails.posterPath,
-                backdropPoster: movieDetails.backdroPath,
                 rating: movieDetails.vote_average,
                 genres: movieDetails.genres,
               },
@@ -89,6 +89,9 @@ function useRecommendations() {
     error,
     handleSubmit,
     movies,
+    fetchRecommendations,
+    setMovies,
+    setError,
   };
 }
 
