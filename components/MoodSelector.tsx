@@ -46,6 +46,12 @@ const MoodSelector = () => {
               Pick another mood
             </button>
             <RecommendationsSection movies={movies} isGot={isGot} />
+            <button
+              onClick={handlePickAnotherMood}
+              className="text-white bg-red-400 font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 shadow-xl"
+            >
+              Pick another mood
+            </button>
           </>
         ) : (
           showMoods && (
