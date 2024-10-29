@@ -17,7 +17,7 @@ export const getPlatformLogo = (name: string) => {
       ? "/logos/apple-tv-logo.png"
       : name.toLowerCase() === "paramount+" || name.toLowerCase() === "paramount"
       ? "/logos/paramount.svg"
-      : " ";
+      : null;
 
   return url;
 };

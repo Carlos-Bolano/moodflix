@@ -37,7 +37,7 @@ export const getMovieDetails = async (movieTitle: string) => {
 
     const movie = {
       movieId: details.id,
-      posterPath: `https://image.tmdb.org/t/p/w500/${details.poster_path}`,
+      posterPath: details.poster_path ? `https://image.tmdb.org/t/p/w500/${details.poster_path} ` : "",
       title: details.title,
       vote_average: details.vote_average,
       release_date: details.release_date,
@@ -46,7 +46,7 @@ export const getMovieDetails = async (movieTitle: string) => {
     return movie;
   } catch (error) {
     console.error("Error al obtener los detalles de la película:", error);
-    return null; // Manejo del error según tu lógica
+    return null;
   }
 };
 // TODO: SET language=es-Es IN THE QUERY TO MAKE THE REQUEST
