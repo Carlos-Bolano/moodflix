@@ -1,10 +1,9 @@
 import Link from "next/link";
-import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="py-4 text-center">
-      <div className="bg-[#faf7de]/80 lg:backdrop-blur-sm rounded-xl border-2 px-2 border-[#faf7de]">
+    <footer className="py-4 text-center z-10">
+      <div className="bg-[#faf7de]/40 backdrop-blur-sm max-w-max mx-auto rounded-xl border-2 px-2 border-[#faf7de]">
         <p className="text-center text-gray-600 text-sm drop-shadow-md">
           Created wtih <span className="text-red-400 text-lg animate-pulse"> ❤ </span> by{" "}
           <Link href="https://carlos-bolano.vercel.app/" target="_blank" rel="noreferrer">
