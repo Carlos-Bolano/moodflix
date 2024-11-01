@@ -1,0 +1,112 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "choose": "Choose",
+    "about": "About"
+  },
+  "Footer": {
+    "createdWith": "Created with",
+    "by": "by",
+    "allRightsReserved": "All rights reserved"
+  },
+  "HomePage": {
+    "title": "Movie Recommender Based on emotions, feelings or mood",
+    "subtitle": {
+      "label": "don't want to write how you feel?, then ",
+      "link": "choose your mood."
+    },
+    "input": {
+      "placeholder": "What's your mood?",
+      "button": {
+        "label": "Get Recommendations",
+        "loading": "Getting recommendations"
+      }
+    }
+  },
+  "ChoosePage": {
+    "title": "Pick your mood and I'll tell you what movie to watch",
+    "subtitle": {
+      "label": "don't want to pick how you feel?, then",
+      "link": "write down your mood."
+    },
+    "button": {
+      "label": "Get Recommendations",
+      "loading": "Getting recommendations"
+    },
+    "pickAnotherMoodButton": "Pick another mood",
+    "Moods": {
+      "Neutral": {
+        "title": "Neutral",
+        "prompt": "I'm feeling pretty neutral right now. I want to watch a movie that keeps me in this balanced, chill mood, nothing too emotional or intense."
+      },
+      "Sad": {
+        "title": "Sad",
+        "prompt": "I'm feeling sad, and I want to watch a movie that deepens this emotion, something that allows me to fully feel and process my sadness."
+      },
+      "Happy": {
+        "title": "Happy",
+        "prompt": "I'm in a happy mood, and I want to keep the good vibes going. Show me a movie that will make me even happier!"
+      },
+      "Angry": {
+        "title": "Angry",
+        "prompt": "I'm feeling angry and I want to channel this emotion. Show me a movie that matches my intensity and lets me stay in this mood."
+      },
+      "Fearful": {
+        "title": "Fearful",
+        "prompt": "I'm feeling a bit fearful, and I want to dive deeper into that feeling. Show me a movie that will give me a thrill and keep me on edge."
+      },
+      "Anxious": {
+        "title": "Anxious",
+        "prompt": "I'm feeling anxious, and I want a movie that lets me sit in that tension, something that heightens this anxious feeling."
+      },
+      "Reflexive": {
+        "title": "Reflexive",
+        "prompt": "I'm in a reflective mood, and I want to watch a movie that keeps me deep in thought, something introspective or philosophical."
+      },
+      "Brain-dead": {
+        "title": "Brain-dead",
+        "prompt": "I feel totally brain-dead right now, and I want a movie that lets me stay in this state—something light, easy, and not too complicated."
+      },
+      "Creative": {
+        "title": "Creative",
+        "prompt": "I'm feeling creative, and I want a movie that will inspire me even more, something artistic or imaginative that fuels my creativity."
+      },
+      "Romantic": {
+        "title": "Romantic",
+        "prompt": "I'm feeling romantic, and I want to watch a movie that enhances this mood, something that makes me feel even more in love."
+      },
+      "Broken": {
+        "title": "Broken",
+        "prompt": "I'm heartbroken right now, and I want to watch a movie that lets me stay in that feeling, something that resonates with my pain."
+      },
+      "Adventurous": {
+        "title": "Adventurous",
+        "prompt": "I'm feeling adventurous, and I want to watch a movie that makes me feel even more excited for adventure and exploration."
+      },
+      "Nostalgic": {
+        "title": "Nostalgic",
+        "prompt": "I'm feeling nostalgic, and I want to watch a movie that takes me back, something that makes me feel even more connected to the past."
+      },
+      "Astonished": {
+        "title": "Astonished",
+        "prompt": "I'm feeling amazed right now, and I want a movie that keeps me in that sense of wonder—something that makes me go 'wow!'"
+      },
+      "Hot": {
+        "title": "Hot",
+        "prompt": "I'm feeling a little hot right now, and I want to see something that really turns me on, I want to see asses, naked women and everything very sexy."
+      },
+      "MoneyMaker": {
+        "title": "MoneyMaker",
+        "prompt": "I'm feeling ambitious and money-driven. Show me a movie that keeps me in that mindset, something about success and making it big."
+      },
+      "Motivation": {
+        "title": "Motivation",
+        "prompt": "I'm feeling super motivated, and I want to watch a movie that pumps me up even more, something inspiring that keeps my drive alive."
+      },
+      "Wow": {
+        "title": "Wow",
+        "prompt": "I'm in a 'wow' mood and I want to keep it going. Show me something epic, mind-blowing, and visually stunning!"
+      }
+    }
+  }
+}

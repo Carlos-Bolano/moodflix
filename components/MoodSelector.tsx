@@ -5,22 +5,24 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Loader from "./Loader";
 import RecommendationsSection from "./RecommendationsSection";
+import { useTranslations } from "next-intl";
 
 const MoodSelector = () => {
-  const [mood, setMood] = useState({ title: "", url: "", prompt: "" });
+  const [mood, setMood] = useState({ title: "", url: "", prompt: "", key: "" });
   const [showMoods, setShowMoods] = useState(true);
   const { setPrompt, isGot, loading, error, movies, fetchRecommendations, setMovies, setError } =
     useRecommendations();
+  const t = useTranslations("ChoosePage");
 
-  const handleMood = (mood: { title: string; url: string }) => {
-    setMood({ title: mood.title, url: mood.url, prompt: "" });
+  const handleMood = (mood: { title: string; url: string; key: string }) => {
+    const extractedPrompt = t("Moods." + mood.key + ".prompt");
+    setMood({ title: mood.title, url: mood.url, prompt: extractedPrompt, key: mood.title });
   };
 
   const handleSubmit = () => {
-    if (mood.title.length > 0) {
-      const prompt = `im feeling ${mood.title} please recommend me some movies for me to watch.`;
-      setPrompt(mood.prompt || prompt);
-      fetchRecommendations(prompt);
+    if (mood.prompt.length > 0) {
+      setPrompt(mood.prompt);
+      fetchRecommendations(mood.prompt);
       setShowMoods(false);
     }
   };
@@ -28,7 +30,7 @@ const MoodSelector = () => {
   const handlePickAnotherMood = () => {
     setError(null);
     setMovies([]);
-    setMood({ title: "", url: "", prompt: "" });
+    setMood({ title: "", url: "", prompt: "", key: "" });
     setShowMoods(true);
   };
 
@@ -43,14 +45,14 @@ const MoodSelector = () => {
               onClick={handlePickAnotherMood}
               className="text-white bg-red-400 font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 shadow-xl"
             >
-              Pick another mood
+              {t("pickAnotherMoodButton")}
             </button>
             <RecommendationsSection movies={movies} isGot={isGot} />
             <button
               onClick={handlePickAnotherMood}
               className="text-white bg-red-400 font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 shadow-xl"
             >
-              Pick another mood
+              {t("pickAnotherMoodButton")}
             </button>
           </>
         ) : (
@@ -60,10 +62,10 @@ const MoodSelector = () => {
                 Moods.map((item) => (
                   <button
                     type="button"
-                    onClick={() => handleMood(item)}
+                    onClick={() => handleMood({ title: item.key, url: item.url, key: item.key })}
                     key={item.url}
                     className={`flex flex-col gap-1 justify-center items-center p-4 max-w-[270px] rounded-md cursor-pointer hover:bg-slate-500 text-gray-700 hover:text-white transition-all duration-100 ease-in-out drop-shadow-sm ${
-                      mood.title === item.title ? "bg-red-400 text-white" : ""
+                      mood.title === item.key ? "bg-red-400 text-white" : ""
                     }`}
                   >
                     {item.url && (
@@ -72,10 +74,10 @@ const MoodSelector = () => {
                         src={item.url}
                         width={50}
                         height={50}
-                        alt={`${item.title} mood emoji`}
+                        alt={`${item.key} mood emoji`}
                       />
                     )}
-                    <span>{item.title}</span>
+                    <span>{t(`Moods.${item.key}.title`)}</span>
                   </button>
                 ))}
             </div>
@@ -88,7 +90,7 @@ const MoodSelector = () => {
             type="submit"
             className="text-white bg-red-400 font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 shadow-xl"
           >
-            <span className="block">{loading ? "Getting recommendations" : "Get recommendations"}</span>
+            <span className="block">{loading ? t("button.loading") : t("button.label")}</span>
             <Image
               src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Clapper%20Board.png"
               alt="loader"
@@ -103,7 +105,7 @@ const MoodSelector = () => {
               onClick={handlePickAnotherMood}
               className="text-white bg-red-400 font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 shadow-xl"
             >
-              Pick another mood
+              {t("pickAnotherMoodButton")}
             </button>
             <p className="text-red-500 mt-2">{error}</p>
           </div>

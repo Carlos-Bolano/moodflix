@@ -1,0 +1,112 @@
+{
+  "Navbar": {
+    "home": "Inicio",
+    "choose": "Elegir",
+    "about": "Acerca de"
+  },
+  "Footer": {
+    "createdWith": "Creado con",
+    "by": "por",
+    "allRightsReserved": "Todos los derechos reservados"
+  },
+  "HomePage": {
+    "title": "Recomendador de películas basado en emociones o estado de ánimo",
+    "subtitle": {
+      "label": "¿No quieres escribir cómo te sientes? Entonces",
+      "link": "elige tu estado de ánimo."
+    },
+    "input": {
+      "placeholder": "¿Cuál es tu estado de ánimo?",
+      "button": {
+        "label": "Obtener recomendaciones",
+        "loading": "Obteniendo recomendaciones"
+      }
+    }
+  },
+  "ChoosePage": {
+    "title": "Elige tu estado de ánimo y te recomiendo una película",
+    "subtitle": {
+      "label": "¿No quieres elegir como te sientes?, entonces ",
+      "link": "escribe tu estado de ánimo."
+    },
+    "button": {
+      "label": "Obtener recomendaciones",
+      "loading": "Obteniendo recomendaciones"
+    },
+    "pickAnotherMoodButton": "Elegir otro estado de ánimo",
+    "Moods": {
+      "Neutral": {
+        "title": "Neutral",
+        "prompt": "Me siento bastante neutral ahora mismo. Quiero ver una película que me mantenga en este estado equilibrado, nada demasiado emocional o intenso."
+      },
+      "Sad": {
+        "title": "Triste",
+        "prompt": "Me siento triste y quiero ver una película que profundice en esta emoción, algo que me permita sentir y procesar plenamente mi tristeza."
+      },
+      "Happy": {
+        "title": "Feliz",
+        "prompt": "Estoy de buen humor y quiero mantener las buenas vibras. ¡Muéstrame una película que me haga aún más feliz!"
+      },
+      "Angry": {
+        "title": "Enojado",
+        "prompt": "Me siento enojado y quiero canalizar esta emoción. Muéstrame una película que iguale mi intensidad y me permita mantenerme en este ánimo."
+      },
+      "Fearful": {
+        "title": "Temeroso",
+        "prompt": "Me siento un poco asustado y quiero profundizar en ese sentimiento. Muéstrame una película que me dé un escalofrío y me mantenga en suspenso."
+      },
+      "Anxious": {
+        "title": "Ansioso",
+        "prompt": "Me siento ansioso y quiero una película que me permita sentarme en esa tensión, algo que intensifique esta sensación de ansiedad."
+      },
+      "Reflexive": {
+        "title": "Reflexivo",
+        "prompt": "Estoy en un estado reflexivo y quiero ver una película que me mantenga pensando, algo introspectivo o filosófico."
+      },
+      "Brain-dead": {
+        "title": "Atontado",
+        "prompt": "Me siento totalmente atontado ahora mismo y quiero una película que me permita mantenerme en este estado, algo ligero y fácil de seguir."
+      },
+      "Creative": {
+        "title": "Creativo",
+        "prompt": "Me siento creativo y quiero una película que me inspire aún más, algo artístico o imaginativo que alimente mi creatividad."
+      },
+      "Romantic": {
+        "title": "Romántico",
+        "prompt": "Me siento romántico y quiero ver una película que aumente este sentimiento, algo que me haga sentir aún más enamorado."
+      },
+      "Broken": {
+        "title": "Destrozado",
+        "prompt": "Estoy destrozado y quiero ver una película que me permita seguir en ese sentimiento, algo que resuene con mi dolor."
+      },
+      "Adventurous": {
+        "title": "Aventurero",
+        "prompt": "Me siento aventurero y quiero ver una película que me haga sentir aún más emocionado por la aventura y la exploración."
+      },
+      "Nostalgic": {
+        "title": "Nostálgico",
+        "prompt": "Me siento nostálgico y quiero ver una película que me lleve atrás en el tiempo, algo que me conecte más con el pasado."
+      },
+      "Astonished": {
+        "title": "Asombrado",
+        "prompt": "Estoy asombrado y quiero una película que mantenga esa sensación de asombro, algo que me haga decir '¡wow!'"
+      },
+      "Hot": {
+        "title": "Cachondit@",
+        "prompt": "Me siento un poco cachondit@ y quiero ver una página que me haga más caliente. ¡Muéstrame una página que me mantenga caliente! o muestrame una pelicula que me haga sentir caliente."
+      },
+      "MoneyMaker": {
+        "title": "Ambicioso",
+        "prompt": "Me siento ambicioso y motivado por el dinero. Muéstrame una película que mantenga esa mentalidad, algo sobre el éxito y lograr grandes cosas."
+      },
+      "Motivation": {
+        "title": "Motivación",
+        "prompt": "Me siento muy motivado y quiero ver una película que me dé aún más energía, algo inspirador que mantenga viva mi motivación."
+      },
+      "Wow": {
+        "title": "Impresionado",
+        "prompt": "Estoy en un estado de 'wow' y quiero mantenerlo. ¡Muéstrame algo épico, impresionante y visualmente impactante!"
+      }
+    }
+  }
+}

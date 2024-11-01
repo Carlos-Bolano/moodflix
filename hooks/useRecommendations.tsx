@@ -1,5 +1,6 @@
 import { Movie } from "@/components/MovieCard";
 import { getMovieDetails } from "@/utils/GetMovieDetails";
+import { useLocale } from "next-intl";
 import { useState } from "react";
 
 function useRecommendations() {
@@ -8,6 +9,7 @@ function useRecommendations() {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
+  const locale = useLocale();
   const isGot = movies ? movies.length >= 1 : false;
 
   const fetchRecommendations = async (text?: string) => {
@@ -33,6 +35,7 @@ function useRecommendations() {
 
       if (data.recommendations.length === 1) {
         const recommendation = data.recommendations[0];
+        const posterUri = `/officer-${locale}.webp`;
         setMovies((prevMovies) => [
           ...prevMovies,
           {
@@ -42,7 +45,7 @@ function useRecommendations() {
             trailer: recommendation.trailer,
             platforms: recommendation.platforms,
             year: "",
-            poster: "",
+            poster: posterUri,
             backdropPoster: "",
             rating: 0,
             genres: [""],
@@ -50,7 +53,7 @@ function useRecommendations() {
         ]);
       } else {
         data.recommendations.forEach(async (recommendation: any) => {
-          const movieDetails = await getMovieDetails(recommendation.movieTitle);
+          const movieDetails = await getMovieDetails(recommendation.movieTitle, locale);
           movieDetails &&
             setMovies((prevMovies) => [
               ...prevMovies,

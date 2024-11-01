@@ -1,8 +1,8 @@
-import { Genre, GENRES } from "@/constans";
+import { GENRES } from "@/constans";
 
-export const getMovieDetails = async (movieTitle: string) => {
+export const getMovieDetails = async (movieTitle: string, locale: string) => {
   try {
-    const url = `https://api.themoviedb.org/3/search/movie?query=${movieTitle}&include_adult=false&language=en-En&page=1`;
+    const url = `https://api.themoviedb.org/3/search/movie?query=${movieTitle}&include_adult=false&language=${locale}&page=1`;
 
     const options = {
       method: "GET",
@@ -49,4 +49,3 @@ export const getMovieDetails = async (movieTitle: string) => {
     return null;
   }
 };
-// TODO: SET language=es-Es IN THE QUERY TO MAKE THE REQUEST
