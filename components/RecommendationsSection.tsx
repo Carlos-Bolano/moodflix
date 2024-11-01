@@ -1,4 +1,5 @@
 import MovieCard, { Movie } from "./MovieCard";
+import WantedUser from "./WantedUser";
 
 export default function RecommendationsSection({ movies, isGot }: { movies: Movie[]; isGot: boolean }) {
   if (movies.length === 0 && isGot) {
@@ -32,7 +33,13 @@ export default function RecommendationsSection({ movies, isGot }: { movies: Movi
 
   if (movies.length === 1 && movies[0].id === 23) {
     const singleMovie = movies[0];
-    return <p>{singleMovie.title}</p>;
+    return (
+      <WantedUser
+        title={singleMovie.title}
+        explanation={singleMovie.explanation}
+        poster={singleMovie.poster}
+      />
+    );
   }
 
   return null;
