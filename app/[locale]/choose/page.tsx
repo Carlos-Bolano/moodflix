@@ -1,4 +1,3 @@
-import EmojiRain from "@/components/EmojiRain";
 import MoodSelector from "@/components/MoodSelector";
 import NavigationLink from "@/components/NavigationLink";
 import { useTranslations } from "next-intl";
