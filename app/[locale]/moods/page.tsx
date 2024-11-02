@@ -3,8 +3,8 @@ import NavigationLink from "@/components/NavigationLink";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-const ChoosePage = () => {
-  const t = useTranslations("ChoosePage");
+const MoodsPage = () => {
+  const t = useTranslations("MoodsPage");
   return (
     <section className="flex flex-col items-center py-10 relative z-10 ">
       <div>
@@ -23,4 +23,4 @@ const ChoosePage = () => {
   );
 };
 
-export default ChoosePage;
+export default MoodsPage;

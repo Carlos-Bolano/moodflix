@@ -6,13 +6,14 @@ import React, { useState } from "react";
 import Loader from "./Loader";
 import RecommendationsSection from "./RecommendationsSection";
 import { useTranslations } from "next-intl";
+import Mood from "./Mood";
 
 const MoodSelector = () => {
   const [mood, setMood] = useState({ title: "", url: "", prompt: "", key: "" });
   const [showMoods, setShowMoods] = useState(true);
   const { setPrompt, isGot, loading, error, movies, fetchRecommendations, setMovies, setError } =
     useRecommendations();
-  const t = useTranslations("ChoosePage");
+  const t = useTranslations("MoodsPage");
 
   const handleMood = (mood: { title: string; url: string; key: string }) => {
     const extractedPrompt = t("Moods." + mood.key + ".prompt");
@@ -59,27 +60,7 @@ const MoodSelector = () => {
           showMoods && (
             <div className="grid gap-4 grid-cols-2 sm:grid-cols-[repeat(auto-fit,minmax(170px,1fr))] bg-white/70 p-4 rounded-2xl shadow-xl border-2 border-[#faf7de] backdrop-blur-sm w-full max-w-[1260px]">
               {Moods &&
-                Moods.map((item) => (
-                  <button
-                    type="button"
-                    onClick={() => handleMood({ title: item.key, url: item.url, key: item.key })}
-                    key={item.url}
-                    className={`flex flex-col gap-1 justify-center items-center p-4 max-w-[270px] rounded-md cursor-pointer hover:bg-slate-500 text-gray-700 hover:text-white transition-all duration-100 ease-in-out drop-shadow-sm ${
-                      mood.title === item.key ? "bg-red-400 text-white" : ""
-                    }`}
-                  >
-                    {item.url && (
-                      <Image
-                        className="w-[50px] h-[50px]"
-                        src={item.url}
-                        width={50}
-                        height={50}
-                        alt={`${item.key} mood emoji`}
-                      />
-                    )}
-                    <span>{t(`Moods.${item.key}.title`)}</span>
-                  </button>
-                ))}
+                Moods.map((item) => <Mood item={item} key={item.url} mood={mood} handleMood={handleMood} />)}
             </div>
           )
         )}
