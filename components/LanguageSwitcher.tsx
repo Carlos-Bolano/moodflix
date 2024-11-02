@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function LanguageSwitcher() {
   return (
-    <div className="flex gap-2">
+    <div className="flex items-center gap-2">
       <LocaleLink locale="en" />
       <LocaleLink locale="es" />
     </div>
