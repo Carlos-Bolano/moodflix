@@ -1,7 +1,7 @@
 {
   "Navbar": {
     "home": "Home",
-    "choose": "Choose",
+    "moods": "Moods",
     "about": "About"
   },
   "Footer": {
@@ -26,7 +26,7 @@
       }
     }
   },
-  "ChoosePage": {
+  "MoodsPage": {
     "title": "Pick your mood and I'll tell you what movie to watch",
     "subtitle": {
       "label": "don't want to pick how you feel?, then",
@@ -154,11 +154,11 @@
       },
       "question3": {
         "question": "What types of movies can I expect in the recommendations?",
-        "answer": "Thanks to the TMDB API, Moodflix's recommendations include a variety of genres and details like poster, rating, and release year, so you can choose confidently."
+        "answer": "Moodflix offers a wide variety of movies tailored to match your current mood. Our recommendations span across multiple genres—from feel-good comedies to intense thrillers, heartfelt dramas, and inspiring documentaries."
       },
       "question4": {
         "question": "How accurate are the recommendations?",
-        "answer": "Our recommendations are based on emotion analysis and user selections, and while not infallible, we constantly work to make them as accurate and personal as possible."
+        "answer": "While our recommendations are based on AI analysis and user feedback, they may not always be perfect. However, we’re continuously working to improve the accuracy and personal relevance of our suggestions."
       }
     },
     "thanks": {

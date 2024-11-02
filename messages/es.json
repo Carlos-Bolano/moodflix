@@ -1,7 +1,7 @@
 {
   "Navbar": {
     "home": "Inicio",
-    "choose": "Elegir",
+    "moods": "Ánimo",
     "about": "Acerca de"
   },
   "Footer": {
@@ -26,7 +26,7 @@
       }
     }
   },
-  "ChoosePage": {
+  "MoodsPage": {
     "title": "Elige tu estado de ánimo y te recomiendo una película",
     "subtitle": {
       "label": "¿No quieres elegir como te sientes?, entonces ",
@@ -154,16 +154,16 @@
       },
       "question3": {
         "question": "¿Qué tipos de películas puedo esperar en las recomendaciones?",
-        "answer": "Gracias a la API de TMDB, las recomendaciones de Moodflix incluyen una variedad de géneros y detalles como el póster, la calificación y el año de estreno, para que puedas elegir con confianza."
+        "answer": "Moodflix ofrece una amplia variedad de películas adaptadas a tu estado de ánimo actual. Nuestras recomendaciones abarcan múltiples géneros: desde comedias reconfortantes hasta thrillers intensos, dramas conmovedores y documentales inspiradores."
       },
       "question4": {
         "question": "¿Qué tan precisas son las recomendaciones?",
-        "answer": "Nuestras recomendaciones se basan en el análisis emocional y las selecciones de los usuarios, y aunque no son infalibles, trabajamos constantemente para hacerlas lo más precisas y personales posible."
+        "answer": "Si bien nuestras recomendaciones se basan en análisis de inteligencia artificial y comentarios de los usuarios, es posible que no siempre sean perfectas. Sin embargo, trabajamos continuamente para mejorar la precisión y la relevancia personal de nuestras sugerencias."
       }
+    },
+    "thanks": {
+      "title": "Gracias por usar Moodflix",
+      "description": "¡Gracias por tomarte el tiempo de explorar Moodflix! Tu apoyo significa mucho para mí. Creé esta aplicación con la esperanza de ayudarte a descubrir películas que resuenen con tus emociones y mejoren tu experiencia de visualización. Si tienes algún comentario, sugerencia o simplemente quieres compartir tus películas favoritas, no dudes en comunicarte conmigo. ¡Disfruta viendo la película!"
     }
-  },
-  "thanks": {
-    "title": "Gracias por usar Moodflix",
-    "description": "¡Gracias por tomarte el tiempo de explorar Moodflix! Tu apoyo significa mucho para mí. Creé esta aplicación con la esperanza de ayudarte a descubrir películas que resuenen con tus emociones y mejoren tu experiencia de visualización. Si tienes algún comentario, sugerencia o simplemente quieres compartir tus películas favoritas, no dudes en comunicarte conmigo. ¡Disfruta viendo la película!"
   }
 }
