@@ -1,23 +1,29 @@
 "use client";
 import { useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Logo from "./Logo";
-import { usePathname } from "next/navigation";
-import Image from "next/image";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const pathname = usePathname();
+  const locale = useLocale();
+  const t = useTranslations("Navbar");
 
   const navLinks = [
     {
-      title: "Home",
-      href: "/",
+      title: "home",
+      href: `/${locale}`,
     },
     {
-      title: "Choose",
-      href: "/choose",
-      isWorking: true,
+      title: "about",
+      href: `/${locale}/about`,
+    },
+    {
+      title: "choose",
+      href: `/${locale}/choose`,
     },
   ];
 
@@ -26,12 +32,12 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-[#faf7de]/90  border-b-2 border-b-[#faf7de] fixed left-0 right-0 py-4 w-full backdrop-blur-sm z-50">
+    <header className="bg-[#faf7de]/70 border-b-2 border-b-[#faf7de] fixed left-0 right-0 py-4 w-full backdrop-blur-sm z-50">
       <nav className="flex justify-between items-center w-[90%] gap-4 max-w-[1600px] mx-auto">
         <Logo />
         <div
-          className={`bg-[#faf7de]/95 backdrop-blur-sm text-slate-700 lg:bg-transparent gap-6 transition-all duration-300 ease-in-out fixed w-[75%] h-screen -left-full bottom-0 top-0 ${
-            showMenu ? "left-0" : "-left-full"
+          className={` text-slate-700 gap-6 transition-all duration-300 ease-in-out fixed w-[75%] h-screen -left-full bottom-0 top-0 ${
+            showMenu ? "left-0 bg-[#faf7de]/95 backdrop-blur-sm" : "-left-full"
           } lg:static flex flex-col lg:flex-row items-center pt-52 gap-x-6 lg:p-0 lg:max-w-max lg:h-full`}
         >
           {navLinks.map((tab) => (
@@ -42,14 +48,10 @@ export default function Navbar() {
               href={tab.href}
               key={tab.title}
             >
-              {tab.title}
+              {t(tab.title)}
             </Link>
           ))}
-          <div className="px-2 rounded-md flex items-center justify-between gap-1 bg-slate-300 text-gray-600  cursor-pointer">
-            <Image src="/logos/flag-usa.png" alt="usa flag" width={25} height={25} />
-            <span>English</span>
-          </div>
-          {/* TODO: create a language changer */}
+          <LanguageSwitcher />
         </div>
 
         <button

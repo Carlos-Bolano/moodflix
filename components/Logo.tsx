@@ -3,10 +3,10 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <Link href="/" className="flex items-center justify-center space-x-1 text-red-400">
+    <Link href="/" className="flex items-center justify-center space-x-1 text-red-400 drop-shadow-2xl ">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="p-0 m-0"
+        className="p-0 m-0 drop-shadow-2xl "
         width="24"
         height="24"
         viewBox="0 0 24 24"
