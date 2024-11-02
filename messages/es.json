@@ -111,5 +111,59 @@
         "prompt": "Estoy en un estado de 'wow' y quiero mantenerlo. ¡Muéstrame algo épico, impresionante y visualmente impactante!"
       }
     }
+  },
+  "AboutPage": {
+    "aboutDev": "¡Hola! Soy Carlos, un desarrollador web de Colombia. Disfruto crear aplicaciones que hacen la vida un poco más fácil y divertida. Si quieres conectar o simplemente decir hola, aquí están mis redes sociales.",
+    "whatsMoodflix": {
+      "title": "¿Qué es Moodflix?",
+      "description": "Moodflix es una aplicación impulsada por IA que te ayuda a encontrar la película perfecta para tu estado de ánimo. Ya sea que te sientas feliz, nostálgico, melancólico o motivado, Moodflix recomienda películas que se alinean con tus emociones para que puedas disfrutar de una experiencia única y significativa. Y si no puedes encontrar las palabras para describir cómo te sientes, también puedes elegir de una lista de estados de ánimo para obtener una recomendación personalizada."
+    },
+    "howItWorks": {
+      "title": "¿Cómo funciona Moodflix?",
+      "description1": "Moodflix utiliza inteligencia artificial para entender cómo te sientes. Simplemente escribe una breve descripción de tu estado de ánimo o elige de nuestra lista de emociones y sentimientos para identificar cuál refleja mejor tu momento actual. Con estas opciones, Moodflix asegura que cualquier usuario, sin importar cómo se exprese, pueda recibir recomendaciones que conecten con sus emociones.",
+      "description2": "Moodflix combina la API Gemini de Google y el SDK de IA de Vercel para interpretar las emociones en tu texto o la emoción que selecciones, y luego sugiere películas basadas en este análisis. Además, gracias a la integración con la API de TMDB, cada recomendación incluye el póster de la película, la calificación, el año de estreno y los géneros, creando una experiencia completa."
+    },
+    "technology": {
+      "title": "Tecnología utilizada",
+      "description1": "Impulsado por IA y datos enriquecidos, Moodflix combina el poder del análisis emocional, el aprendizaje automático y datos ricos de películas para ofrecerte recomendaciones verdaderamente personalizadas.",
+      "tech": {
+        "next": {
+          "title": "Next.js",
+          "description": "Moodflix está construido con Next.js, un potente framework de React para construir backend y frontend en un solo proyecto."
+        },
+        "gemini": {
+          "title": "API de Google Gemini",
+          "description": "Identifica y clasifica el tono emocional de tu texto o emoción seleccionada, asegurando que cada recomendación esté alineada con tu estado de ánimo."
+        },
+        "TMDB": {
+          "title": "API de TMDB",
+          "description": "Nos permite enriquecer cada recomendación con detalles de la película para que tengas una experiencia completa y visualmente atractiva."
+        }
+      },
+      "description2": "Gracias a estas tecnologías, Moodflix no es solo un recomendador de películas, sino una herramienta que se adapta a tu mundo emocional y te presenta las películas de una manera única."
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "question1": {
+        "question": "¿Es Moodflix gratis?",
+        "answer": "¡Sí, Moodflix es completamente gratis! Solo selecciona tu estado de ánimo o elige uno de nuestra lista, ¡y estarás listo para encontrar una gran película!"
+      },
+      "question2": {
+        "question": "¿La aplicación almacena información sobre mi estado de ánimo?",
+        "answer": "No, Moodflix no almacena ninguna información sobre tu estado emocional. Solo usamos tus datos para generar recomendaciones, y luego se eliminan, asegurando tu privacidad."
+      },
+      "question3": {
+        "question": "¿Qué tipos de películas puedo esperar en las recomendaciones?",
+        "answer": "Gracias a la API de TMDB, las recomendaciones de Moodflix incluyen una variedad de géneros y detalles como el póster, la calificación y el año de estreno, para que puedas elegir con confianza."
+      },
+      "question4": {
+        "question": "¿Qué tan precisas son las recomendaciones?",
+        "answer": "Nuestras recomendaciones se basan en el análisis emocional y las selecciones de los usuarios, y aunque no son infalibles, trabajamos constantemente para hacerlas lo más precisas y personales posible."
+      }
+    }
+  },
+  "thanks": {
+    "title": "Gracias por usar Moodflix",
+    "description": "¡Gracias por tomarte el tiempo de explorar Moodflix! Tu apoyo significa mucho para mí. Creé esta aplicación con la esperanza de ayudarte a descubrir películas que resuenen con tus emociones y mejoren tu experiencia de visualización. Si tienes algún comentario, sugerencia o simplemente quieres compartir tus películas favoritas, no dudes en comunicarte conmigo. ¡Disfruta viendo la película!"
   }
 }

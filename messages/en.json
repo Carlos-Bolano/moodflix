@@ -111,5 +111,59 @@
         "prompt": "I'm in a 'wow' mood and I want to keep it going. Show me something epic, mind-blowing, and visually stunning!"
       }
     }
+  },
+  "AboutPage": {
+    "aboutDev": "Hi there! I'm Carlos, a web developer from Colombia. I enjoy creating apps that make life a little easier and more fun. If you want to connect or just say hello, here are my social networks",
+    "whatsMoodflix": {
+      "title": "What is Moodflix?",
+      "description": "Moodflix is ​​an AI-powered app that helps you find the perfect movie for your mood. Whether you're happy, nostalgic, melancholic, or motivated, Moodflix recommends movies that align with your emotions so you can enjoy a unique and meaningful experience. And if you can't find the words to describe how you're feeling, you can also choose from a list of moods to get a personalized recommendation."
+    },
+    "howItWorks": {
+      "title": "How does Moodflix work?",
+      "description1": "Moodflix uses artificial intelligence to understand how you feel. Simply type in a short description of your mood, or choose from our list of emotions and feelings to identify the one that best reflects your current moment. With these options, Moodflix ensures that any user, no matter how they express themselves, can receive recommendations that connect with their emotions.",
+      "description2": "Moodflix combines Google’s Gemini API and Vercel AI SDK to interpret the emotions in your text or the emotion you select, and then suggests movies based on this analysis. Plus, thanks to the integration with TMDB API, each recommendation includes the movie poster, rating, release year, and genres, creating a complete experience."
+    },
+    "technology": {
+      "title": "Technology used",
+      "description1": "Powered by AI and Rich Data Moodflix combines the power of emotion analysis, machine learning and rich movie data to bring you truly personalized recommendations.",
+      "tech": {
+        "next": {
+          "title": "Next.js",
+          "description": "Moodflix is ​​built with Next.js, a powerful React framework for building backend and frontend in a single project."
+        },
+        "gemini": {
+          "title": "Google Gemini API",
+          "description": "Identify and classify the emotional tone of your text or selected emotion, ensuring that each recommendation is aligned with your mood."
+        },
+        "TMDB": {
+          "title": "TMDB API",
+          "description": "It allows us to enrich each recommendation with details from the movie so that you have a complete and visually appealing experience."
+        }
+      },
+      "description2": "Thanks to these technologies, Moodflix is ​​not just a movie recommender, but a tool that adapts to your emotional world and presents movies to you in a unique way."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "question1": {
+        "question": "Is Moodflix free?",
+        "answer": "Yes, Moodflix is completely free! Just select your mood or choose one from our list, and you're ready to find a great movie!"
+      },
+      "question2": {
+        "question": "Does the app store information about my mood?",
+        "answer": "No, Moodflix does not store any information about your emotional state. We only use your data to generate recommendations, and then it is deleted, ensuring your privacy."
+      },
+      "question3": {
+        "question": "What types of movies can I expect in the recommendations?",
+        "answer": "Thanks to the TMDB API, Moodflix's recommendations include a variety of genres and details like poster, rating, and release year, so you can choose confidently."
+      },
+      "question4": {
+        "question": "How accurate are the recommendations?",
+        "answer": "Our recommendations are based on emotion analysis and user selections, and while not infallible, we constantly work to make them as accurate and personal as possible."
+      }
+    },
+    "thanks": {
+      "title": "Thanks for using Moodflix",
+      "description": "Thank you for taking the time to explore Moodflix! Your support means a lot to me. I created this app in hopes of helping you discover movies that resonate with your emotions and enhance your viewing experience. If you have any feedback, suggestions, or just want to share your favorite movies, please feel free to reach out to me. Happy watching!"
+    }
   }
 }

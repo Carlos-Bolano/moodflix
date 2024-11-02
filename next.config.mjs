@@ -15,6 +15,11 @@ const nextConfig = {
         hostname: "image.tmdb.org",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "carlos-bolano.vercel.app",
+        pathname: "/**",
+      },
     ],
   },
 };
