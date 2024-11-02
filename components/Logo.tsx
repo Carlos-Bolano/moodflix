@@ -1,9 +1,11 @@
-import Link from "next/link";
-import React from "react";
+import NavigationLink from "./NavigationLink";
 
 const Logo = () => {
   return (
-    <Link href="/" className="flex items-center justify-center space-x-1 text-red-400 drop-shadow-2xl ">
+    <NavigationLink
+      href="/"
+      className="flex items-center justify-center space-x-1 text-red-400 drop-shadow-2xl "
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="p-0 m-0 drop-shadow-2xl "
@@ -22,7 +24,7 @@ const Logo = () => {
         <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z" />
       </svg>
       <h1 className="text-xl font-[500]">Moodflix</h1>
-    </Link>
+    </NavigationLink>
   );
 };
 
