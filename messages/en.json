@@ -9,11 +9,14 @@
     "by": "by",
     "allRightsReserved": "All rights reserved"
   },
+  "Loader": {
+    "loading": "Looking for the best movies for you..."
+  },
   "HomePage": {
     "title": "Movie Recommender Based on emotions, feelings or mood",
     "subtitle": {
       "label": "don't want to write how you feel?, then ",
-      "link": "choose your mood."
+      "link": "pick your mood."
     },
     "input": {
       "placeholder": "What's your mood?",

@@ -9,6 +9,9 @@
     "by": "por",
     "allRightsReserved": "Todos los derechos reservados"
   },
+  "Loader": {
+    "loading": "Buscando las mejores películas para ti..."
+  },
   "HomePage": {
     "title": "Recomendador de películas basado en emociones o estado de ánimo",
     "subtitle": {
