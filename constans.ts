@@ -82,8 +82,6 @@ export const GENRES = [
   },
 ];
 
-//TODO: make a custom prompt to each mood
-
 export const Moods = [
   {
     url: "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Neutral%20Face.png",
