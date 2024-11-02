@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Logo from "./Logo";
 import LanguageSwitcher from "./LanguageSwitcher";
+import CloseMenu from "@/icons/CloseMenu";
+import OpenMenu from "@/icons/OpenMenu";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -22,8 +24,8 @@ export default function Navbar() {
       href: `/${locale}/about`,
     },
     {
-      title: "choose",
-      href: `/${locale}/choose`,
+      title: "moods",
+      href: `/${locale}/moods`,
     },
   ];
 
@@ -59,38 +61,7 @@ export default function Navbar() {
           onClick={handleMenu}
           title="Menu button"
         >
-          {showMenu ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <line x1="4" x2="20" y1="12" y2="12" />
-              <line x1="4" x2="20" y1="6" y2="6" />
-              <line x1="4" x2="20" y1="18" y2="18" />
-            </svg>
-          )}
+          {showMenu ? <CloseMenu /> : <OpenMenu />}
         </button>
       </nav>
     </header>
