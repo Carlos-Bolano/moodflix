@@ -1,4 +1,3 @@
-
 # 🎥 Moodflix 🎥
 
 ## 📖 About The Project
@@ -8,6 +7,7 @@
 [![Product Name Screen Shot][product-screenshot]](https://moodflix-by-calisto.vercel.app/)
 
 ### 🌟 Features:
+
 - Emotional analysis through text input 🧠
 - Personalized movie recommendations 🎬
 - Powered by AI using the Vercel SDK and Google's API 🌐
@@ -16,8 +16,8 @@
 - Sleek and intuitive user interface for an enhanced experience 🎨
 
 ### 🛠️ Built With these technologies
-[![React][React Badge]][React URL] [![Next.js][Next.js Badge]][Next.js URL] [![TailwindCSS][TailwindCSS Badge]][TailwindCSS URL] [![TypeScript][TypeScript Badge]][TypeScript URL] [![Zod][Zod Badge]][Zod URL] [![Eslint][Eslint Badge]][Eslint URL] [![Prettier][Prettier Badge]][Prettier URL] [![Gemini][Gemini Badge]][Gemini URL]
 
+[![React][React Badge]][React URL] [![Next.js][Next.js Badge]][Next.js URL] [![TailwindCSS][TailwindCSS Badge]][TailwindCSS URL] [![TypeScript][TypeScript Badge]][TypeScript URL] [![Zod][Zod Badge]][Zod URL] [![Eslint][Eslint Badge]][Eslint URL] [![Prettier][Prettier Badge]][Prettier URL] [![Gemini][Gemini Badge]][Gemini URL]
 
 ## 🤝 Contributing
 
@@ -28,16 +28,13 @@ Contributions are welcome, please follow these steps:
 3. Make the necessary commits (`git commit -m 'Add AmazingFeature'`)
 4. Open a Pull Request
 
-
 ## 📧 Contact
 
 I’d love to hear from you! Whether you have questions, feedback, or want to connect, feel free to reach out through any of the following platforms:
 
- [![X][X Badge]][X URL] [![LinkedIn][LinkedIn Badge]][LinkedIn URL] [![GMail][GMail Badge]][GMail URL] [![Portfolio][Portfolio Badge]][Portfolio URL]
- 
+[![X][X Badge]][X URL] [![LinkedIn][LinkedIn Badge]][LinkedIn URL] [![GMail][GMail Badge]][GMail URL] [![Portfolio][Portfolio Badge]][Portfolio URL]
+
 Looking forward to connecting with you!
-
-
 
 [X Badge]: https://img.shields.io/badge/X-000000.svg?style=for-the-badge&logo=X&logoColor=white
 [X URL]: https://x.com/Calisto_dev
@@ -45,11 +42,9 @@ Looking forward to connecting with you!
 [LinkedIn URL]: https://linkedin.com/in/carlos-bolano
 [GMail Badge]: https://img.shields.io/badge/Gmail-EA4335.svg?style=for-the-badge&logo=Gmail&logoColor=white
 [GMail URL]: mailto:carlostutos828@gmail.com
-[Portfolio badge]:https://img.shields.io/badge/Portfolio-000000.svg?style=for-the-badge&logo=portfolio&logoColor=white
+[Portfolio badge]: https://img.shields.io/badge/Portfolio-000000.svg?style=for-the-badge&logo=portfolio&logoColor=white
 [Portfolio URL]: https://carlos-bolano.vercel.app
-[product-screenshot]: https://github.com/Carlos-Bolano/moodflix/blob/main/public/moodflix-screenshot.png
-
-
+[product-screenshot]: /public/moodflix-latest-screenshot.png
 [TypeScript Badge]: https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white
 [TypeScript URL]: https://www.typescriptlang.org/
 [React Badge]: https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black
@@ -68,4 +63,3 @@ Looking forward to connecting with you!
 [Zod URL]: https://zod.dev/
 [Gemini Badge]: https://img.shields.io/badge/Gemini-FF5722.svg?style=for-the-badge&logo=google&logoColor=white
 [Gemini URL]: https://gemini.google.com/
-
