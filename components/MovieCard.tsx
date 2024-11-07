@@ -22,16 +22,16 @@ const MovieCard = ({ title, explanation, platforms, poster, rating, year, genres
   const googleSearchUrl = createGoogleSearchLink(title);
 
   return (
-    <article className="md:p-4 rounded-3xl bg-white/70 backdrop-blur-sm shadow-xl flex flex-col md:flex-row gap-3 md:gap-1 border-2 border-white">
-      {poster.length > 1 ? (
+    <article className="md:p-4 rounded-3xl bg-white/70 backdrop-blur-sm shadow-xl grid md:grid-cols-[0.5fr,1fr] md:gap-1 border-2 border-white">
+      {poster.length > 1 && (
         <Image
-          className="md:rounded-3xl rounded-t-3xl w-full md:w-1/2 h-auto"
+          className="md:rounded-3xl rounded-t-3xl w-full min-w-44 object-cover  h-full place-self-center"
           src={poster}
           alt={title}
-          width={200}
-          height={100}
+          width={600}
+          height={600}
         />
-      ) : null}
+      )}
       <div className="flex flex-col md:mt-4 px-4 pb-4">
         <Link
           href={googleSearchUrl}
@@ -68,7 +68,7 @@ const MovieCard = ({ title, explanation, platforms, poster, rating, year, genres
 
         <p className="text-slate-600 mt-2 text-[14.6px]">{explanation}</p>
 
-        <div className="flex flex-wrap gap-2 items-center mt-2">
+        <div className="flex flex-wrap gap-2 items-center mt-4">
           {platforms && platforms.length > 0
             ? platforms.map((platform) => {
                 const logoSrc = getPlatformLogo(platform.name);

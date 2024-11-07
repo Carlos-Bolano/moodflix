@@ -9,13 +9,13 @@ interface Movie {
 }
 const WantedUser = ({ title, explanation, poster }: Movie) => {
   return (
-    <article className="md:p-4 rounded-3xl bg-white/70 backdrop-blur-sm shadow-xl flex flex-col md:flex-row gap-3 md:gap-1 border-2 border-white max-w-[800px]">
+    <article className="md:p-4 rounded-3xl bg-white/70 backdrop-blur-sm shadow-xl grid md:grid-cols-[0.5fr,1fr] max-w-[800px] md:gap-1 gap-4 border-2 border-white">
       <Image
-        className="md:rounded-3xl rounded-t-3xl w-full md:w-1/2 h-auto"
+        className="md:rounded-3xl rounded-t-3xl w-full min-w-44 object-cover  h-full place-self-center"
         src={poster}
         alt="Movie Poster"
-        width={200}
-        height={100}
+        width={600}
+        height={600}
       />
 
       <div className="flex flex-col md:mt-4 px-4 pb-4">
