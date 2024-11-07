@@ -17,7 +17,7 @@ export default function SearchForm({
     <div className="my-10">
       <form className="flex flex-col gap-4 justify-center items-center" onSubmit={handleSubmit}>
         <textarea
-          className="focus:outline-red-400 border-2 p-4 w-full rounded-md text-gray-900 text-sm"
+          className="focus:outline-red-400 resize-none border-2 p-4 w-full rounded-md text-gray-900 text-sm"
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
           placeholder={t("placeholder")}
@@ -28,7 +28,7 @@ export default function SearchForm({
         <button
           disabled={loading}
           type="submit"
-          className="text-white bg-red-400 font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1"
+          className="text-white bg-red-400 font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 hover:bg-red-500 transition-colors"
         >
           <span className="block">{loading ? t("button.loading") : t("button.label")}</span>
 

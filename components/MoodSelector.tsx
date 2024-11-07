@@ -69,7 +69,7 @@ const MoodSelector = () => {
             disabled={loading}
             onClick={handleSubmit}
             type="submit"
-            className="text-white bg-red-400 font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 shadow-xl"
+            className="text-white bg-red-400 hover:bg-red-500 transition-colors font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 shadow-xl"
           >
             <span className="block">{loading ? t("button.loading") : t("button.label")}</span>
             <Image
