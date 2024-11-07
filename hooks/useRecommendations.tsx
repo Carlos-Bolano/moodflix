@@ -52,12 +52,10 @@ function useRecommendations() {
           },
         ]);
       } else {
-        data.recommendations.forEach(async (recommendation: any) => {
+        const movieDetailsPromises = data.recommendations.map(async (recommendation: any) => {
           const movieDetails = await getMovieDetails(recommendation.movieTitle, locale);
-          movieDetails &&
-            setMovies((prevMovies) => [
-              ...prevMovies,
-              {
+          return movieDetails
+            ? {
                 id: movieDetails.movieId,
                 title: movieDetails.title,
                 explanation: recommendation.explanation,
@@ -67,9 +65,12 @@ function useRecommendations() {
                 poster: movieDetails.posterPath,
                 rating: movieDetails.vote_average,
                 genres: movieDetails.genres,
-              },
-            ]);
+              }
+            : null;
         });
+
+        const moviesData = await Promise.all(movieDetailsPromises);
+        setMovies(moviesData.filter((movie) => movie !== null));
       }
     } catch (err: any) {
       setError(err.message || "Unknown error occurred");
