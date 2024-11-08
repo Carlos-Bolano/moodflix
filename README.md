@@ -14,6 +14,9 @@
 - Provides mood-based explanations for each movie suggestion 💡
 - Shows where to stream each recommended movie on popular platforms 📺
 - Sleek and intuitive user interface for an enhanced experience 🎨
+- Multi-language support for a more personalized experience 🌍
+- Moods Page with a list of emotions for users who prefer selecting their mood instead of typing 😌
+- Enhanced movie details thanks to integration with TMDB's API 🎥
 
 ### 🛠️ Built With these technologies
 
