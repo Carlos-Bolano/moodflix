@@ -44,6 +44,7 @@ export default function Navbar() {
         >
           {navLinks.map((tab) => (
             <Link
+              onClick={handleMenu}
               className={`${
                 pathname === tab.href ? "text-red-400 drop-shadow-md" : ""
               } hover:drop-shadow-md transition-all duration-300 ease-in-out`}
