@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import { Button } from "./Button";
+import Clapper from "@/icons/Clapper";
 
 export default function SearchForm({
   prompt,
@@ -25,20 +26,10 @@ export default function SearchForm({
           cols={60}
           required
         />
-        <button
-          disabled={loading}
-          type="submit"
-          className="text-white bg-red-400 font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 hover:bg-red-500 transition-colors"
-        >
+        <Button disabled={loading} type="submit">
           <span className="block">{loading ? t("button.loading") : t("button.label")}</span>
-
-          <Image
-            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Clapper%20Board.png"
-            alt="loader"
-            width={20}
-            height={20}
-          />
-        </button>
+          <Clapper />
+        </Button>
       </form>
     </div>
   );
