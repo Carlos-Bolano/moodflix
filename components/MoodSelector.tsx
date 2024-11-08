@@ -1,12 +1,14 @@
 "use client";
 import { Moods } from "@/constans";
 import useRecommendations from "@/hooks/useRecommendations";
-import Image from "next/image";
 import React, { useState } from "react";
 import Loader from "./Loader";
 import RecommendationsSection from "./RecommendationsSection";
 import { useTranslations } from "next-intl";
 import Mood from "./Mood";
+import { Button } from "./Button";
+import Clown from "@/icons/Clown";
+import Clapper from "@/icons/Clapper";
 
 const MoodSelector = () => {
   const [mood, setMood] = useState({ title: "", url: "", prompt: "", key: "" });
@@ -42,52 +44,36 @@ const MoodSelector = () => {
           <Loader />
         ) : isGot && movies.length > 0 && !loading ? (
           <>
-            <button
-              onClick={handlePickAnotherMood}
-              className="text-white bg-red-400 font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 shadow-xl"
-            >
-              {t("pickAnotherMoodButton")}
-            </button>
+            <Button onClick={handlePickAnotherMood}>
+              {t("pickAnotherMoodButton")} <Clown />
+            </Button>
             <RecommendationsSection movies={movies} isGot={isGot} />
-            <button
-              onClick={handlePickAnotherMood}
-              className="text-white bg-red-400 font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 shadow-xl"
-            >
-              {t("pickAnotherMoodButton")}
-            </button>
+            <Button onClick={handlePickAnotherMood}>
+              {t("pickAnotherMoodButton")} <Clown />
+            </Button>
           </>
         ) : (
           showMoods && (
-            <div className="grid gap-4 grid-cols-2 sm:grid-cols-[repeat(auto-fit,minmax(170px,1fr))] bg-white/70 p-4 rounded-2xl shadow-xl border-2 border-[#faf7de] backdrop-blur-sm w-full max-w-[1260px]">
-              {Moods &&
-                Moods.map((item) => <Mood item={item} key={item.url} mood={mood} handleMood={handleMood} />)}
-            </div>
+            <>
+              <div className="grid gap-4 grid-cols-2 sm:grid-cols-[repeat(auto-fit,minmax(170px,1fr))] bg-white/70 p-4 rounded-2xl shadow-xl border-2 border-[#faf7de] backdrop-blur-sm w-full max-w-[1260px]">
+                {Moods &&
+                  Moods.map((item) => (
+                    <Mood item={item} key={item.url} mood={mood} handleMood={handleMood} />
+                  ))}
+              </div>
+              <Button disabled={loading} type="submit" onClick={handleSubmit}>
+                <span className="block">{loading ? t("button.loading") : t("button.label")}</span>
+                <Clapper />
+              </Button>
+            </>
           )
         )}
-        {showMoods && (
-          <button
-            disabled={loading}
-            onClick={handleSubmit}
-            type="submit"
-            className="text-white bg-red-400 hover:bg-red-500 transition-colors font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 shadow-xl"
-          >
-            <span className="block">{loading ? t("button.loading") : t("button.label")}</span>
-            <Image
-              src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Clapper%20Board.png"
-              alt="loader"
-              width={20}
-              height={20}
-            />
-          </button>
-        )}
+
         {error && (
           <div className="flex flex-col items-center">
-            <button
-              onClick={handlePickAnotherMood}
-              className="text-white bg-red-400 font-medium rounded-md text-sm px-5 py-2 text-center inline-flex items-center gap-1 shadow-xl"
-            >
-              {t("pickAnotherMoodButton")}
-            </button>
+            <Button onClick={handlePickAnotherMood}>
+              {t("pickAnotherMoodButton")} <Clown />
+            </Button>
             <p className="text-red-500 mt-2">{error}</p>
           </div>
         )}
