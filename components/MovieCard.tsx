@@ -32,7 +32,7 @@ const MovieCard = ({ title, explanation, platforms, poster, rating, year, genres
           height={600}
         />
       )}
-      <div className="flex flex-col md:mt-4 px-4 pb-4">
+      <div className="flex flex-col mt-3 md:mt-4 px-4 pb-4">
         <Link
           href={googleSearchUrl}
           target="_blank"
