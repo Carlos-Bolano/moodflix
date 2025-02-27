@@ -14,7 +14,7 @@ const AboutPage = () => {
         <article className="w-full flex flex-col items-center max-w-[900px] p-2 lg:px-5 pb-10">
           <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
             <Image
-              src="https://carlos-bolano.vercel.app/assets/images/carlos-bola%C3%B1o.webp"
+              src="https://carlos-bolano.vercel.app/me.webp"
               alt="developer"
               width={200}
               height={200}
