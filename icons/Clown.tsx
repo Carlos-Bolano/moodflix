@@ -8,6 +8,7 @@ const Clown = () => {
       alt="Clown Face emoji"
       width={25}
       height={25}
+      unoptimized
     />
   );
 };

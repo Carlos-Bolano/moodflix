@@ -8,6 +8,7 @@ const Clapper = () => {
       alt="Clapper Board emoji"
       width={25}
       height={25}
+      unoptimized
     />
   );
 };

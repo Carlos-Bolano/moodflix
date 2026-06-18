@@ -7,13 +7,22 @@ const requestSchema = z.object({
   text: z.string().min(1, "Text is required"),
 });
 
+const defaultGeminiModel = "gemini-2.5-flash"; // O "gemini-2.5-pro"
+const configuredGeminiModel = process.env.GEMINI_MODEL?.trim();
+
+let geminiModel = defaultGeminiModel;
+
+if (configuredGeminiModel && configuredGeminiModel.length > 0) {
+  geminiModel = configuredGeminiModel.replace(/^models\//, "");
+}
+
 const recommendationSchema = z.array(
   z.object({
     movieTitle: z.string().describe("Represent the movie's name"),
     explanation: z
       .string()
       .describe(
-        "Represent a brief the explanation of the movie in the same language than the text provided by the user"
+        "Represent a brief the explanation of the movie in the same language than the text provided by the user",
       ),
     trailer: z.string().describe("Represent the trailer's link youtube"),
     platforms: z
@@ -21,10 +30,10 @@ const recommendationSchema = z.array(
         z.object({
           name: z.string().describe("Represent the name of the platform"),
           link: z.string().describe("the link of this platform"),
-        })
+        }),
       )
       .describe("Represent the all platforms where this show is available"),
-  })
+  }),
 );
 
 export async function POST(request: Request) {
@@ -71,7 +80,7 @@ export async function POST(request: Request) {
   `;
 
     const { object } = await generateObject({
-      model: google("models/gemini-1.5-pro-latest"),
+      model: google(geminiModel),
       system: systemPrompt,
       prompt: parsedBody.text,
       schema: recommendationSchema,

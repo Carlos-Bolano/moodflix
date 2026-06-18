@@ -24,6 +24,7 @@ const Mood = ({ item, mood, handleMood }: Props) => {
           width={50}
           height={50}
           alt={`${item.key} mood emoji`}
+          unoptimized
         />
       )}
       <span>{t(`Moods.${item.key}.title`)}</span>
