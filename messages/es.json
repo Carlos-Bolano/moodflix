@@ -40,75 +40,75 @@
     "Moods": {
       "Neutral": {
         "title": "Neutral",
-        "prompt": "Me siento bastante neutral ahora mismo. Quiero ver una película que me mantenga en este estado equilibrado, nada demasiado emocional o intenso."
+        "prompt": "Me siento en un estado mental completamente tranquilo, equilibrado y neutral. Recomienda películas relajadas, cotidianas o dramas ligeros que mantengan un ritmo constante y apacible, sin picos emocionales intensos, conflictos pesados ni giros de trama abrumadores."
       },
       "Sad": {
         "title": "Triste",
-        "prompt": "Me siento triste y quiero ver una película que profundice en esta emoción, algo que me permita sentir y procesar plenamente mi tristeza."
+        "prompt": "Me siento profundamente triste, melancólico o decaído. Quiero un drama emocionalmente pesado, una tragedia hermosa o una historia conmovedora que resuene con esta tristeza, me permita abrazar mi vulnerabilidad y me ayude a desahogarme con un buen llanto."
       },
       "Happy": {
         "title": "Feliz",
-        "prompt": "Estoy de buen humor y quiero mantener las buenas vibras. ¡Muéstrame una película que me haga aún más feliz!"
+        "prompt": "¡Estoy de un humor radiante, alegre e increíblemente feliz! Quiero mantener esta energía positiva con películas sumamente optimistas, comedias vibrantes o historias reconfortantes llenas de risas y personajes entrañables que me dejen con una gran sonrisa de oreja a oreja."
       },
       "Angry": {
         "title": "Enojado",
-        "prompt": "Me siento enojado y quiero canalizar esta emoción. Muéstrame una película que iguale mi intensidad y me permita mantenerme en este ánimo."
+        "prompt": "Me siento enojado, frustrado o lleno de rabia, y necesito una vía de escape cinematográfica. Recomienda películas de acción de alto octanaje, thrillers crudos de venganza o historias frenéticas con una energía explosiva que igualen mi intensidad y mi adrenalina interna."
       },
       "Fearful": {
         "title": "Temeroso",
-        "prompt": "Me siento un poco asustado y quiero profundizar en ese sentimiento. Muéstrame una película que me dé un escalofrío y me mantenga en suspenso."
+        "prompt": "Tengo ganas de jugar con el miedo y la tensión. Muéstrame películas de terror espeluznantes, thrillers psicológicos aterradores o historias sobrenaturales llenas de sobresaltos y suspenso que aceleren mi pulso y me mantengan genuinamente asustado."
       },
       "Anxious": {
         "title": "Ansioso",
-        "prompt": "Me siento ansioso y quiero una película que me permita sentarme en esa tensión, algo que intensifique esta sensación de ansiedad."
+        "prompt": "Me siento ansioso, inquieto o con los nervios de punta, y quiero una película compleja y de alta tensión que me sumerja en ese suspenso. Sugiere thrillers claustrofóbicos, misterios psicológicos o dramas intensos que reflejen este estado de alerta y nerviosismo."
       },
       "Reflexive": {
         "title": "Reflexivo",
-        "prompt": "Estoy en un estado reflexivo y quiero ver una película que me mantenga pensando, algo introspectivo o filosófico."
+        "prompt": "Estoy en un estado mental profundamente reflexivo, introspectivo y filosófico. Recomienda cine de autor profundo, ciencia ficción intelectual o estudios existenciales de personajes que desafíen mi perspectiva y me dejen pensando mucho después de los créditos."
       },
       "Brain-dead": {
         "title": "Atontado",
-        "prompt": "Me siento totalmente atontado ahora mismo y quiero una película que me permita mantenerme en este estado, algo ligero y fácil de seguir."
+        "prompt": "Tengo el cerebro completamente frito, agotado y sin energía. Necesito entretenimiento sin esfuerzo: comedias tontas para desconectar, películas animadas ligeras o historias comerciales muy simples que sean reconfortantes, fáciles de seguir y no requieran ningún esfuerzo mental."
       },
       "Creative": {
         "title": "Creativo",
-        "prompt": "Me siento creativo y quiero una película que me inspire aún más, algo artístico o imaginativo que alimente mi creatividad."
+        "prompt": "Me siento muy creativo, inspirado y con la imaginación a mil. Recomienda películas de vanguardia, cine con una estética visual única, obras maestras estilísticas o historias sobre artistas apasionados que rompan las reglas tradicionales y alimenten mi propia chispa artística."
       },
       "Romantic": {
         "title": "Romántico",
-        "prompt": "Me siento romántico y quiero ver una película que aumente este sentimiento, algo que me haga sentir aún más enamorado."
+        "prompt": "Me siento romántico, sentimental y afectuoso. Muéstrame romances apasionados, grandes historias de amor o comedias románticas encantadoras con una química increíble, momentos poéticos y conexiones emocionales profundas que intensifiquen este sentimiento."
       },
       "Broken": {
         "title": "Destrozado",
-        "prompt": "Estoy destrozado y quiero ver una película que me permita seguir en ese sentimiento, algo que resuene con mi dolor."
+        "prompt": "Tengo el corazón completamente roto, destrozado emocionalmente y estoy viviendo un duelo o ruptura. Sugiere dramas crudos y dolorosos, o películas agridulces sobre el desamor que validen mi sufrimiento actual, reflejando exactamente el dolor que siento en el pecho."
       },
       "Adventurous": {
         "title": "Aventurero",
-        "prompt": "Me siento aventurero y quiero ver una película que me haga sentir aún más emocionado por la aventura y la exploración."
+        "prompt": "¡Tengo sed de emoción, adrenalina y exploración! Recomienda películas épicas de aventura, grandes misiones de fantasía, viajes históricos o historias de supervivencia que enciendan mi curiosidad y me den ganas de empacar una mochila hacia lo desconocido."
       },
       "Nostalgic": {
         "title": "Nostálgico",
-        "prompt": "Me siento nostálgico y quiero ver una película que me lleve atrás en el tiempo, algo que me conecte más con el pasado."
+        "prompt": "Me ha invadido una ola de profunda nostalgia y añoranza por tiempos más simples. Sugiere clásicos icónicos del cine, joyas retro de décadas pasadas o historias de crecimiento que evoquen una calidez agridulce y me conecten con los bellos recuerdos del pasado."
       },
       "Astonished": {
         "title": "Asombrado",
-        "prompt": "Estoy asombrado y quiero una película que mantenga esa sensación de asombro, algo que me haga decir '¡wow!'"
+        "prompt": "Siento un asombro indescriptible y una gran fascinación. Recomienda documentales impactantes de la naturaleza, exploración espacial o maravillas visuales que destaquen la inmensidad y misterios del mundo, manteniéndome atrapado en este asombroso estado de 'wow'."
       },
       "Hot": {
         "title": "Cachondit@",
-        "prompt": "Me siento un poco cachondit@ y quiero ver una página que me haga más caliente. ¡Muéstrame una página que me mantenga caliente! o muestrame una pelicula que me haga sentir caliente."
+        "prompt": "Me siento extremadamente cachondo, caliente y con ganas de algo subido de tono. Busco activamente contenido erótico explícito para adultos, escenas calientes, mujeres desnudas y contenido muy sexy que me excite por completo."
       },
       "MoneyMaker": {
         "title": "Ambicioso",
-        "prompt": "Me siento ambicioso y motivado por el dinero. Muéstrame una película que mantenga esa mentalidad, algo sobre el éxito y lograr grandes cosas."
+        "prompt": "Me siento increíblemente ambicioso, codicioso y motivado por el éxito financiero. Muéstrame dramas corporativos despiadados, historias sobre magnates de Wall Street o películas de negocios feroces que muestren riqueza masiva, ambición extrema y cómo llegar a la cima a toda costa."
       },
       "Motivation": {
         "title": "Motivación",
-        "prompt": "Me siento muy motivado y quiero ver una película que me dé aún más energía, algo inspirador que mantenga viva mi motivación."
+        "prompt": "Estoy lleno de una determinación, enfoque y energía imparables. Recomienda dramas deportivos inspiradores, películas biográficas sobre superar la adversidad o historias de superación personal que me carguen las pilas, enciendan mi disciplina y me impulsen a devorarme el mundo."
       },
       "Wow": {
         "title": "Impresionado",
-        "prompt": "Estoy en un estado de 'wow' y quiero mantenerlo. ¡Muéstrame algo épico, impresionante y visualmente impactante!"
+        "prompt": "¡Quiero que la película me vuele la cabeza por completo! Muéstrame blockbusters monumentales, ciencia ficción con giros argumentales brutales o directores con un apartado visual alucinante y efectos especiales épicos que me dejen sin palabras y totalmente hipnotizado."
       }
     }
   },

@@ -40,75 +40,75 @@
     "Moods": {
       "Neutral": {
         "title": "Neutral",
-        "prompt": "I'm feeling pretty neutral right now. I want to watch a movie that keeps me in this balanced, chill mood, nothing too emotional or intense."
+        "prompt": "I'm experiencing a calm, balanced, and completely neutral state of mind. Recommend low-stakes, chill movies like slice-of-life, light dramas, or cozy films that maintain a steady pace without intense emotional peaks, heavy conflict, or overwhelming plot twists."
       },
       "Sad": {
         "title": "Sad",
-        "prompt": "I'm feeling sad, and I want to watch a movie that deepens this emotion, something that allows me to fully feel and process my sadness."
+        "prompt": "I'm feeling deeply sad, melancholy, or down. I want an emotionally heavy, poignant movie—a cathartic drama or a beautiful tragedy—that safely resonates with this sorrow, helps me embrace my vulnerability, and allows me to process my feelings through a good cry."
       },
       "Happy": {
         "title": "Happy",
-        "prompt": "I'm in a happy mood, and I want to keep the good vibes going. Show me a movie that will make me even happier!"
+        "prompt": "I'm in a radiant, joyful, and incredibly happy mood! Keep the high-energy positive vibes going by showing me ultimate feel-good movies, vibrant comedies, or heartwarming stories filled with laughter, optimistic characters, and pure comfort that will leave me smiling from ear to ear."
       },
       "Angry": {
         "title": "Angry",
-        "prompt": "I'm feeling angry and I want to channel this emotion. Show me a movie that matches my intensity and lets me stay in this mood."
+        "prompt": "I'm feeling angry, frustrated, or full of rage, and I need a cinematic outlet to channel this intensity. Recommend high-octane action, gritty revenge thrillers, or high-stakes fast-paced movies with raw, explosive energy that match my internal fire and adrenaline."
       },
       "Fearful": {
         "title": "Fearful",
-        "prompt": "I'm feeling a bit fearful, and I want to dive deeper into that feeling. Show me a movie that will give me a thrill and keep me on edge."
+        "prompt": "I'm in the mood to flirt with fear and tension. Bring on chilling horror movies, terrifying psychological thrillers, or supernatural tales full of jump scares and dread that will heighten this uneasy feeling, making my pulse race and keeping me genuinely spooked."
       },
       "Anxious": {
         "title": "Anxious",
-        "prompt": "I'm feeling anxious, and I want a movie that lets me sit in that tension, something that heightens this anxious feeling."
+        "prompt": "I'm feeling anxious, restless, or on edge, and I want a complex, high-tension movie that lets me sit in that suspense. Suggest claustrophobic thrillers, mind-bending mysteries, or tightly wound dramas that mirror this nervous, high-alert state of mind."
       },
       "Reflexive": {
         "title": "Reflexive",
-        "prompt": "I'm in a reflective mood, and I want to watch a movie that keeps me deep in thought, something introspective or philosophical."
+        "prompt": "I am in a deeply reflective, introspective, and philosophical mood. Recommend profound art-house films, thought-provoking sci-fi, or existential character studies that challenge my perspective, feature deep dialogue, and leave me pondering about life long after the credits roll."
       },
       "Brain-dead": {
         "title": "Brain-dead",
-        "prompt": "I feel totally brain-dead right now, and I want a movie that lets me stay in this state—something light, easy, and not too complicated."
+        "prompt": "My brain is completely fried, exhausted, and running on empty. I need zero-effort entertainment—turn-off-your-brain comedies, lighthearted animated features, or simple, predictable popcorn movies that are comforting, easy to follow, and require absolutely no mental heavy lifting."
       },
       "Creative": {
         "title": "Creative",
-        "prompt": "I'm feeling creative, and I want a movie that will inspire me even more, something artistic or imaginative that fuels my creativity."
+        "prompt": "I'm feeling deeply creative, inspired, and imaginative. Recommend avant-garde films, highly stylistic cinema, unique visual masterpieces, or stories about passionate artists that break traditional storytelling rules and act as ultimate fuel for my own artistic inspiration."
       },
       "Romantic": {
         "title": "Romantic",
-        "prompt": "I'm feeling romantic, and I want to watch a movie that enhances this mood, something that makes me feel even more in love."
+        "prompt": "I'm feeling romantic, sentimental, and full of affection. Show me sweeping romance movies, passionate love stories, or charming romantic comedies with incredible chemistry, poetic moments, and deep emotional connections that amplify this warm, loving mood."
       },
       "Broken": {
         "title": "Broken",
-        "prompt": "I'm heartbroken right now, and I want to watch a movie that lets me stay in that feeling, something that resonates with my pain."
+        "prompt": "I am completely heartbroken, emotionally shattered, and grieving a loss or breakup. Suggest heavy, painful raw dramas or bittersweet films about heartbreak and coping that validate my current suffering, mirroring the exact ache in my chest right now."
       },
       "Adventurous": {
         "title": "Adventurous",
-        "prompt": "I'm feeling adventurous, and I want to watch a movie that makes me feel even more excited for adventure and exploration."
+        "prompt": "I'm craving excitement, wanderlust, and exploration! Recommend epic adventure movies, sweeping fantasy quests, grand historical journeys, or survival stories that make me feel alive, spark my curiosity, and make me want to pack a bag and explore the unknown."
       },
       "Nostalgic": {
         "title": "Nostalgic",
-        "prompt": "I'm feeling nostalgic, and I want to watch a movie that takes me back, something that makes me feel even more connected to the past."
+        "prompt": "I'm trapped in a wave of deep nostalgia, longing for simpler times. Suggest classic cinematic gems, retro masterpieces from past decades, or coming-of-age period pieces that evoke a bittersweet warmth and reconnect me with fond memories of yesteryear."
       },
       "Astonished": {
         "title": "Astonished",
-        "prompt": "I'm feeling amazed right now, and I want a movie that keeps me in that sense of wonder—something that makes me go 'wow!'"
+        "prompt": "I'm feeling a massive sense of awe, wonder, and amazement. Recommend awe-inspiring documentaries, magnificent nature films, or jaw-dropping spectacles that highlight the beauty, scale, and mysteries of the universe, keeping me locked in this breathtaking state of 'wow'."
       },
       "Hot": {
         "title": "Hot",
-        "prompt": "I'm feeling a little hot right now, and I want to see something that really turns me on, I want to see asses, naked women and everything very sexy."
+        "prompt": "I'm feeling extremely horny, naughty, and hot right now. I'm actively looking for explicit adult content, sexy scenes, naked women, and provocative erotica to turn me on completely."
       },
       "MoneyMaker": {
         "title": "MoneyMaker",
-        "prompt": "I'm feeling ambitious and money-driven. Show me a movie that keeps me in that mindset, something about success and making it big."
+        "prompt": "I am feeling incredibly ambitious, power-hungry, and money-driven. Show me cutthroat corporate dramas, stories about wall street tycoons, lavish high-society biopics, or high-stakes hustle movies that showcase massive financial success, grinding, and making it big."
       },
       "Motivation": {
         "title": "Motivation",
-        "prompt": "I'm feeling super motivated, and I want to watch a movie that pumps me up even more, something inspiring that keeps my drive alive."
+        "prompt": "I am filled with unstoppable drive, focus, and determination. Recommend deeply inspirational sports dramas, triumph-over-adversity biopics, or high-energy underdog stories that pump me up, ignite my work ethic, and push me to conquer my personal goals."
       },
       "Wow": {
         "title": "Wow",
-        "prompt": "I'm in a 'wow' mood and I want to keep it going. Show me something epic, mind-blowing, and visually stunning!"
+        "prompt": "I want to be completely blown away! Show me absolute blockbusters, mind-bending sci-fi with incredible plot twists, or visually stunning masterpieces with epic scale and top-tier special effects that will leave me speechless and completely mesmerized."
       }
     }
   },
